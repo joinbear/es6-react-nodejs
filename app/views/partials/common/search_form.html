@@ -1,0 +1,200 @@
+<style>
+	.search-form {
+		padding: 0;
+	}
+	.left { float: left; }
+	.condition-item {
+		list-style: none;
+		margin: 0 10px 10px 0;
+		line-height: 30px;
+	}
+	.tag-text{
+		float: left;
+	}
+	.form-element {
+		float: right;
+	}
+	.input-text {
+		width: 160px;
+	}
+</style>
+<!-- 搜索表单 -->
+<ul class="search-form clearfix">
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">&nbsp;关键字：</label>
+		    <input type="text" class="form-control" placeholder="Jane Doe">
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">录入时间：</label>
+		    <input type="text" class="form-control" value="2016-02-01">
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">到&nbsp;&nbsp;</label>
+		    <input type="text" class="form-control" value="2016-02-01">
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">当前状态：</label>
+		    <ul class="nav" style="display: inline-block;border:1px solid #ddd;border-radius: 3px;">
+				  <li role="presentation" class="dropdown">
+				    <a style="padding: 2px 15px;background: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      ===全选===<span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">库存</a></li>
+				    	<li><a href="#">超时</a></li>
+				    	<li><a href="#">解约</a></li>
+				    	<li><a href="#">调入</a></li>
+				    </ul>
+				  </li>
+				</ul>
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<button class="btn btn-success">更多条件</button>
+	</li>
+	<li class="left condition-item">
+		<button class="btn btn-success">查询</button>
+	</li>
+	<li class="left condition-item">
+		<button class="btn btn-success">导出EXCEL</button>
+	</li>
+</ul>
+<ul class="search-form clearfix" style="display: none;">
+	<li class="left condition-item">
+		<div class="form-inline clearfix">
+			<div class="form-group">
+		    <label for="exampleInputName2">速销类型：</label>
+		    <ul class="nav" style="display: inline-block;border:1px solid #ddd;border-radius: 5px;">
+				  <li role="presentation" class="dropdown">
+				    <a style="padding: 2px 15px;background: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      ===全选===<span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">库存</a></li>
+				    	<li><a href="#">超时</a></li>
+				    	<li><a href="#">解约</a></li>
+				    	<li><a href="#">调入</a></li>
+				    </ul>
+				  </li>
+				</ul>
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">调入合同类型：</label>
+		    <ul class="nav" style="display: inline-block;border:1px solid #ddd;border-radius: 5px;">
+				  <li role="presentation" class="dropdown">
+				    <a style="padding: 2px 15px;background: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      ===&nbsp;全&nbsp;选&nbsp;===<span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">库存</a></li>
+				    	<li><a href="#">超时</a></li>
+				    	<li><a href="#">解约</a></li>
+				    	<li><a href="#">调入</a></li>
+				    </ul>
+				  </li>
+				</ul>
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">结束时间：</label>
+		    <input type="text" class="form-control" value="2016-02-01">
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">到&nbsp;&nbsp;</label>
+		    <input type="text" class="form-control" value="2016-02-01">
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">审核状态：</label>
+		    <ul class="nav" style="display: inline-block;border:1px solid #ddd;border-radius: 5px;">
+				  <li role="presentation" class="dropdown">
+				    <a style="padding: 2px 15px;background: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      ===全选===<span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">库存</a></li>
+				    	<li><a href="#">超时</a></li>
+				    	<li><a href="#">解约</a></li>
+				    	<li><a href="#">调入</a></li>
+				    </ul>
+				  </li>
+				</ul>
+		  </div>
+		</div>
+	</li>
+	<li class="left condition-item">
+		<div class="form-inline">
+			<div class="form-group">
+		    <label for="exampleInputName2">调入区域：</label>
+		    <ul class="nav" style="display: inline-block;border:1px solid #ddd;border-radius: 5px;">
+				  <li role="presentation" class="dropdown">
+				    <a style="padding: 2px 15px;background: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      ===大区===<span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">库存</a></li>
+				    	<li><a href="#">超时</a></li>
+				    	<li><a href="#">解约</a></li>
+				    	<li><a href="#">调入</a></li>
+				    </ul>
+				  </li>
+				</ul>
+				<ul class="nav" style="display: inline-block;border:1px solid #ddd;border-radius: 5px;">
+				  <li role="presentation" class="dropdown">
+				    <a style="padding: 2px 15px;background: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      ===商圈===<span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">库存</a></li>
+				    	<li><a href="#">超时</a></li>
+				    	<li><a href="#">解约</a></li>
+				    	<li><a href="#">调入</a></li>
+				    </ul>
+				  </li>
+				</ul>
+				<ul class="nav" style="display: inline-block;border:1px solid #ddd;border-radius: 5px;">
+				  <li role="presentation" class="dropdown">
+				    <a style="padding: 2px 15px;background: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      ===门店===<span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">库存</a></li>
+				    	<li><a href="#">超时</a></li>
+				    	<li><a href="#">解约</a></li>
+				    	<li><a href="#">调入</a></li>
+				    </ul>
+				  </li>
+				</ul>
+		  </div>
+		</div>
+	</li>
+</ul>

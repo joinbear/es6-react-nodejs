@@ -1,0 +1,42 @@
+<style>
+	label.tip-error {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 3px;
+		color: red;
+	}
+</style>
+<!-- 主体内容 -->
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-4 col-md-6 col-md-offset-2">
+		<h2>模板生成控件</h2>
+		<form action="/ui-design/add" method="post" class="form-data">
+			<div class="form-group">
+				<label for="">项目名称（请使用英文，项目路径由该项生成）<strong class="alert-danger">*</strong></label>
+				<input type="text" class="form-control required" name="projectName">
+			</div>
+			<div class="form-group">
+				<label for="">花名<strong class="alert-danger">*</strong></label>
+				<input type="text" class="form-control required" name="nickName">
+			</div>
+			<div class="form-group">
+				<label for="">qq号<strong class="alert-danger">*</strong></label>
+				<input type="text" class="form-control required" name="qqName">
+			</div>
+			<div class="checkbox">
+		    <label>
+		      <input type="checkbox" name="cssName" value="0" class="style-class" checked="checked"> 是否生成css文件
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox" name="jsName" value="0" class="style-class" checked="checked"> 是否生成javascript文件
+		    </label>
+		  </div>
+			<div class="form-group"><button class="btn btn-info">生成模板</button></div>
+		</form>
+	</div>
+</div>
+<!-- 引入自定义javascript文件,第三方的插件等-->
+<script type="text/javascript" src="javascripts/{{scriptPath}}/{{scriptPath}}.js"></script>
