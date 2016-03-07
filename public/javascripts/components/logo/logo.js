@@ -10,7 +10,7 @@ let Logo = React.createClass({
 		}
 	},
 	render() {
-		return <Image src={this.state.src} className="navbar-left img-logo" />
+		return <Image src={this.state.src} className="navbar-left img-logo"/>
 	}
 });
 

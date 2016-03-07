@@ -1,5 +1,6 @@
 /**
  * [webpack --display-error-details] 当报错，显示错误明细
+ * git push -u origin master
  * @type {[type]}
  */
 var webpack = require('webpack');

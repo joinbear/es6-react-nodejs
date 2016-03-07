@@ -50,18 +50,23 @@ const DatePicker = React.createClass({
   render() {
     //垂直日期控件
     let VerticalDate = (
-      <Input
-        type="text"
-        placeholder={this.state.placeholder}
-        id={this.state.id}
-        name={this.state.name}
-        style={{width:this.state.width}}
-        onChange={this.handleChange} 
-        rel={this.state.name}
-        readOnly="readOnly"
-        value={this.state.value}
-        groupClassName="group-class"
-        labelClassName="label-class" />
+      <div className="form-group">
+        <label className="control-label label-class" >
+          <span>{this.state.labelName}</span>
+        </label>
+        <Input
+          type="text"
+          placeholder={this.state.placeholder}
+          id={this.state.id}
+          name={this.state.name}
+          style={{width:this.state.width}}
+          onChange={this.handleChange} 
+          rel={this.state.name}
+          readOnly="readOnly"
+          value={this.state.value}
+          groupClassName="group-class"
+          labelClassName="label-class" />
+      </div>
     );
     //水平日期控件
     let HorizontalDate = (
