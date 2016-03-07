@@ -5,7 +5,7 @@ module.exports = function(app){
 		//获取模板的目录
 		var template = req.path.replace(/\/ekp\//,'');
 		console.log(req.path);
-		res.render('test/list', { 
+		res.render('quick_sell/list', { 
 			title: 'Express',
 			scriptPath: 'ui-design',
 			cssPath: 'template',

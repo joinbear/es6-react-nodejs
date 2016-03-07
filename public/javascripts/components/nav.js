@@ -1,5 +1,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+import configureStore from '../actions/common/configureStore';
+import fetchPosts from '../actions/common/actions';
+import { Provider } from 'react-redux'
+const store = configureStore();
 
 var NavLogo = React.createClass({
 	render : function(){
@@ -91,6 +95,10 @@ var NavBox = React.createClass({
 			]
 		}
 	},
+	componentDidMount() {
+    // const { dispatch, selectedSubreddit } = this.props
+    dispatch(fetchPostsIfNeeded(selectedSubreddit))
+  },
 	render : function(){
 		return(
 			<div className="container-fluid">
@@ -102,8 +110,10 @@ var NavBox = React.createClass({
 		);
 	}
 });
-
+connect(mapStateToProps)(NavBox);
 ReactDOM.render(
-	<NavBox />,
+	  <Provider store={store}>
+      <NavBox />
+    </Provider>,
 	document.getElementById('nav')
 )
