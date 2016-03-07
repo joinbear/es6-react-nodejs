@@ -13,8 +13,8 @@ module.exports = {
     container: modelPath + 'container.js',
     index: modelPath + 'index.js',
     views: modelPath + 'views.js',
-    redux: __dirname + '/public/javascripts/redux/index.js',
-    redux_asyc: __dirname + '/public/javascripts/redux_asyc/index.js',
+    quick_sell: __dirname + '/public/javascripts/quick_sell/add.js'
+    // redux_asyc: __dirname + '/public/javascripts/redux_asyc/index.js',
   },
   output: {
     path: __dirname + '/public/javascripts/dest/',
