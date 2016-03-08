@@ -76,7 +76,7 @@ const Container = React.createClass({
 				</Row>
 				<Row>
 					<Col md={6}>
-						<Select id="selectTest" name="TradeContract" selectType="normal" labelName="速销类型"/>
+						<Select id="selectTest" name="TradeContract" selectType="vertical" labelName="速销类型"/>
 					</Col>
 					<Col md={3}>
 						<InputBox

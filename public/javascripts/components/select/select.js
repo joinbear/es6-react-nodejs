@@ -64,6 +64,7 @@ const Select = React.createClass({
 				parentClassName={this.state.parentClassName}
 				expanded={this.state.expanded}
 				rel={this.state.name}
+				selectText={this.state.selectText}
 				selectValue={this.state.selectValue}
 				options={this.state.options} />
 		);
