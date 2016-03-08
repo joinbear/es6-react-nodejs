@@ -10,25 +10,9 @@ import InputBox from '../components/input';
 import SelectBox from '../components/select';
 import BreadCrumb from '../components/bread_crumb';
 import DatePicker from '../components/date';
-
-const Simditor = require('simditor');
-require ('simditor/styles/simditor.css');
-
-const Editor = React.createClass({
-    componentDidMount : function(){
-        const textbox = ReactDOM.findDOMNode(this.refs.textarea);
-        const editor = new Simditor({
-            textarea: $(textbox)
-        });
-    },
-    render : function(){
-      return (
-        <div>
-            <textarea ref='textarea' />
-        </div>
-      )
-    }
-})
+import Input from '../components/input/input';
+import Select from '../components/select/select';
+import Editor from '../components/editor/editor';
 
 
 const Container = React.createClass({
@@ -53,21 +37,33 @@ const Container = React.createClass({
 				<p>调入公告</p>
 				<Row>
 					<Col md={3}>
-						<InputBox
+						<Input
 							inputType="vertical" 
-							ref="reginSlogan"
-							name="reginSlogan"
-							labelName="大区" />
+							ref="regintest"
+							name="regintest"
+							placeholder="请输入大区口号"
+							labelName="大区"
+							required="true"
+							tipText="输入长度为11位数字"
+							reg='\d{1,11}' />
 					</Col>
 					<Col md={3}>
-						<InputBox
+						<Input
 							inputType="vertical" 
-							ref="reginSlogan"
-							name="reginSlogan"
-							labelName="门店" />
+							ref="regintest1"
+							name="regintest1"
+							placeholder="请输入小区口号"
+							labelName="小区"
+							required="true"
+							reg='\w+' />
 					</Col>
 					<Col md={3}>
-
+						<Input
+							inputType="vertical" 
+							ref="area"
+							name="area"
+							placeholder="面积"
+							labelName="小区" />
 					</Col>
 					<Col md={3}>
 						<InputBox
@@ -80,7 +76,7 @@ const Container = React.createClass({
 				</Row>
 				<Row>
 					<Col md={6}>
-						<SelectBox id="select1" name="TradeContract" selectType="vertical" labelName="速销类型"/>
+						<Select id="selectTest" name="TradeContract" selectType="normal" labelName="速销类型"/>
 					</Col>
 					<Col md={3}>
 						<InputBox
