@@ -9,10 +9,10 @@ import HeaderButton from '../components/header/header_button';
 import InputBox from '../components/input';
 import SelectBox from '../components/select';
 import BreadCrumb from '../components/bread_crumb';
-import DatePicker from '../components/date';
 import Input from '../components/input/input';
 import Select from '../components/select/select';
 import Editor from '../components/editor/editor';
+import DatePicker from '../components/date/date';
 
 
 const Container = React.createClass({
@@ -173,10 +173,13 @@ const Container = React.createClass({
 					</Col>
 					<Col md={3}>
 						<DatePicker
-				   		value="2016-01-22"
+				   		value=""
 				   		id="startTime"
+				   		name="startTime"
+				   		required="true"
+				   		placeholder="请选择调入时间"
 				   		labelName="调入时间"
-				   		inputType="vertical" />
+				   		dateType="vertical" />
 					</Col>
 				</Row>
 				<Row>
