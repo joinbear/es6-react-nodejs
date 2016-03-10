@@ -37,6 +37,7 @@ module.exports = function(app){
 
 	// 静态资源的路径
 	app.use(express.static(path.join(config.rootPath, 'public')));
+	app.use(express.static(path.join(config.rootPath, 'dest')));
 
 
 	//日志设置

@@ -4,7 +4,7 @@ import OptionItems from './options';
 import Tips from '../tips/tips';
 import SelectComponent from './select_base';
 import DirectComponent from '../input/direct_box';
-import { Label } from '../input/label';
+import Label from '../input/label';
 
 
 const Select = React.createClass({
