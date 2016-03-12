@@ -94,7 +94,10 @@ const Select = React.createClass({
 			this.props.onBlur(selectValue);
 		}
 		this.state.value = selectValue;
-		this.validationState();
+		if(this.props.onChange){
+			this.props.onChange(true,this.state.name);
+		}
+		
 	},
 	componentWillReceiveProps(nextProps){
 		this.setState({
