@@ -84,6 +84,8 @@ const Input = React.createClass({
 	      iconType : iconType,
 	      tipText : tipText
 	    });
+      this.props.onChange(validate,this.state.name);
+      
     }
   },
 
@@ -95,7 +97,6 @@ const Input = React.createClass({
   },
 
   handleChange(passValue) {
-  	console.log(passValue);
   	this.state.value = passValue;
   	this.state.isChange = true;
   	//使用该方式，验证值不对，无法正确验证
@@ -112,7 +113,6 @@ const Input = React.createClass({
 		
 	},
   render() {
-  	console.log(this.state.required);
   	let Input = (
   		<InputBase
   			type={this.state.type}

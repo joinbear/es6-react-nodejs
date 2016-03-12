@@ -21,6 +21,8 @@ const Select = React.createClass({
 			id : this.props.id ? this.props.id : seletId,
 			name : this.props.name ? this.props.name : '',
 			tipText: this.props.tipText ? this.props.tipText : '',
+			isChange : false,
+      validate : this.props.type == 'hidden' ? true : false,
 			selectType : this.props.selectType ? this.props.selectType : 'vertical',
 			labelName : this.props.labelName ? this.props.labelName : '请选择',
 			required : this.props.required ?  this.props.required : false ,
@@ -38,24 +40,67 @@ const Select = React.createClass({
 		};
 	},
 	componentDidMount() {
-		let _self = this;
-		let id = this.props.id;
-		$("#"+id).find('button').on('click',function(){
-			let unexpanded = !_self.state.expanded;
-			let className  = unexpanded ? 'btn-group open' : 'btn-group';
-			_self.setState({
-				expanded : unexpanded,
-				parentClassName : className
-			});
+		
+	},
+	validationState() {
+  	let 
+  		value = this.state.value,
+     	length = value.length,
+     	required = this.state.required,
+     	reg = this.state.reg,
+     	validate = true,
+     	iconType = '',
+     	tipText = '内容不能为空',
+     	validateClass = '';
+
+    if(this.state.isChange){
+    	if(reg){
+	    	let 
+	    		matchReg = new RegExp(reg),
+	    		result = matchReg.test(value);
+	    	// console.log(matchReg);
+	    	// console.log(result);
+	    	validate = result ? true : false;
+	    	validateClass =  result ? this.state.success : this.state.error;
+	    	iconType = result ? 'success' : 'error';
+	    	tipText = value == '' ? tipText : this.props.tipText;
+	    }else {
+	    	if(required && length > 0){
+	    		validate = true;
+	    		validateClass = this.state.success;
+	    		iconType = 'success';
+	    	}else if(required && length == 0){
+	    		validate = false;
+	    		validateClass = this.state.error;
+	    		iconType = 'error';
+	    	}else {
+	    		validate = true;
+	    		validateClass = '';
+	    		iconType = '';
+	    	}
+	    }
+
+	    this.setState({
+	      validate: validate,
+	      validateClass : validateClass,
+	      iconType : iconType,
+	      tipText : tipText
+	    });
+    }
+  },
+	handleOnBlur(selectValue,selectText) {
+		console.log(selectValue);
+		if(this.props.onBlur){
+			this.props.onBlur(selectValue);
+		}
+		this.state.value = selectValue;
+		this.validationState();
+	},
+	componentWillReceiveProps(nextProps){
+		this.setState({
+			options : nextProps.options
 		});
-		$("#"+id).find(".select-item").on('click',function(){
-			_self.setState({
-				selectText : $(this).html(),
-				selectValue : $(this).attr('value'),
-				expanded : false,
-				parentClassName : 'btn-group'
-			});
-		});
+		return true;
 	},
 
 	render () {
@@ -66,7 +111,8 @@ const Select = React.createClass({
 				rel={this.state.name}
 				selectText={this.state.selectText}
 				selectValue={this.state.selectValue}
-				options={this.state.options} />
+				options={this.state.options} 
+				handleOnBlur={this.handleOnBlur}/>
 		);
 		switch(this.state.selectType){
   		case 'vertical':

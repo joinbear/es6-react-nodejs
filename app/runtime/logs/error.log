@@ -3898,3 +3898,831 @@ Error: Not Found
     at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
     at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Thu Mar 10 2016 18:13:16 GMT+0800 (CST)] /favicon.ico
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Thu Mar 10 2016 18:13:16 GMT+0800 (CST)] /favicon.ico
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Thu Mar 10 2016 18:16:07 GMT+0800 (CST)] /favicon.ico
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Thu Mar 10 2016 18:28:40 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Thu Mar 10 2016 18:28:43 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 08:25:34 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 08:25:35 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:29:21 GMT+0800 (CST)] /src/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:29:58 GMT+0800 (CST)] /src/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:30:03 GMT+0800 (CST)] /src/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:30:23 GMT+0800 (CST)] /src/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:31:17 GMT+0800 (CST)] /src/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:31:53 GMT+0800 (CST)] /src/quick_sell/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:32:28 GMT+0800 (CST)] /src/quick_sell/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 10:33:47 GMT+0800 (CST)] /src/quick_sell/examples/data.json
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 11:34:20 GMT+0800 (CST)] /favicon.ico
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 11:34:42 GMT+0800 (CST)] /favicon.ico
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 11:34:42 GMT+0800 (CST)] /favicon.ico
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 13:16:31 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Fri Mar 11 2016 13:16:32 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 08:24:25 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 08:24:26 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:15:55 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:20:04 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:20:48 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:21:05 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:21:55 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:22:45 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:24:28 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:24:45 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:24:51 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:26:30 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:28:10 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:28:28 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:28:45 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:29:52 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:30:00 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:31:28 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:32:04 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:33:43 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:34:20 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:34:35 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:34:45 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:34:57 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 11:35:16 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 12:36:19 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:23:39 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:27:01 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:27:38 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:33:41 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:34:28 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:35:00 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:36:16 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:36:22 GMT+0800 (CST)] /ekp/form?foldUserName=&foldUser=1&seNumber=&monthNumber=14&contractNo=&availabilityNo=&housesName=&ownerName=&ownerTel=&foldMoney=&foldTime=&beginDate=&endDate=&businessManager=&businessManagerLink=&bankCard=
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:36:50 GMT+0800 (CST)] /ekp/form/?foldUserName=&foldUser=1&seNumber=&monthNumber=14&contractNo=&availabilityNo=&housesName=&ownerName=&ownerTel=&foldMoney=&foldTime=&beginDate=&endDate=&businessManager=&businessManagerLink=&bankCard=
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:37:05 GMT+0800 (CST)] /ekp/form?foldUserName=&foldUser=1&seNumber=&monthNumber=14&contractNo=&availabilityNo=&housesName=&ownerName=&ownerTel=&foldMoney=&foldTime=&beginDate=&endDate=&businessManager=&businessManagerLink=&bankCard=
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:37:12 GMT+0800 (CST)] /ekp/ekp/form?foldUserName=&foldUser=1&seNumber=&monthNumber=14&contractNo=&availabilityNo=&housesName=&ownerName=&ownerTel=&foldMoney=&foldTime=&beginDate=&endDate=&businessManager=&businessManagerLink=&bankCard=
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:37:48 GMT+0800 (CST)] /ekp/ekp/form?foldUserName=&foldUser=1&seNumber=&monthNumber=14&contractNo=&availabilityNo=&housesName=&ownerName=&ownerTel=&foldMoney=&foldTime=&beginDate=&endDate=&businessManager=&businessManagerLink=&bankCard=
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:37:59 GMT+0800 (CST)] /ekp/ekp/form?foldUserName=&foldUser=1&seNumber=&monthNumber=14&contractNo=&availabilityNo=&housesName=&ownerName=&ownerTel=&foldMoney=&foldTime=&beginDate=&endDate=&businessManager=&businessManagerLink=&bankCard=
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:39:41 GMT+0800 (CST)] /ekp/ekp/form?foldUserName=fdsfsdf&foldUser=1&seNumber=&monthNumber=14&contractNo=&availabilityNo=&housesName=&ownerName=&ownerTel=&foldMoney=&foldTime=&beginDate=&endDate=&businessManager=&businessManagerLink=&bankCard=
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 13:40:34 GMT+0800 (CST)] /ekp/form
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:48:5)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 15:39:12 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 15:39:12 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 15:48:28 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 15:48:28 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 16:53:27 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 16:53:28 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 16:59:10 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+[Sat Mar 12 2016 16:59:10 GMT+0800 (CST)] /
+Error: Not Found
+    at /Users/qiaoni/nodeProject/ekpApp/app/config/error.js:11:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:271:10)
+    at cookieParser (/Users/qiaoni/nodeProject/ekpApp/node_modules/cookie-parser/index.js:34:14)
+    at Layer.handle [as handle_request] (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/nodeProject/ekpApp/node_modules/express/lib/router/index.js:280:7

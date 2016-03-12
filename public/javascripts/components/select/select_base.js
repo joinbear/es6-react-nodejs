@@ -30,6 +30,7 @@ const SelectComponent = React.createClass({
 			expanded : false
 		});
 
+		this.props.handleOnBlur(selectValue,selectText);
 
 	},
 

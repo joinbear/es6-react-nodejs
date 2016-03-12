@@ -32,7 +32,7 @@ const ButtonItem = React.createClass({
 	},
 	render() {
 		return(
-			<li><Button bsStyle="success">{this.props.children}</Button></li>
+			<li><Button bsStyle="success" type="submit">{this.props.children}</Button></li>
 		)
 	}
 });

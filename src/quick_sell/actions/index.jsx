@@ -1,45 +1,10 @@
-import fetch from 'isomorphic-fetch';
+// ===============define all the quick-sell actions in here ==========================
+
+export const RECEIVED_QUICKSELL_INITDATA = 'RECEIVED_QUICKSELL_INITDATA';//速销调入数据初始化action
+export const RECEIVED_SUBREGIN = 'RECEIVED_SUBREGIN';//小区获取action
+export const QUICKSELL_EQUITYTYPE = 'QUICKSELL_EQUITYTYPE';//押证逻辑处理action
+export const QUICKSELL_EQUITYNAME = 'QUICKSELL_EQUITYNAME';//押证选择类型action
+export const QUICKSELL_PUBLISHFORM = 'QUICKSELL_PUBLISHFORM';//表单action
 
 
-// ===============定义同步actions和actions函数==========================
-
-export const SAVE_REPORT = 'SAVE_REPORT'
-export const CLOSE_REPORT = 'CLOSE_REPORT'
-
-export function fullReport() {
-  return {
-    type: SAVE_REPORT,
-    user: '顾彬'
-  }
-}
-
-export function cancelReport() {
-  return {
-    type: CANCEL_REPORT
-  }
-}
-
-
-// ===============定义异步actions和actions函数===========================
-
-export const RECEIVED_QUICKSELL_INITDATA = 'RECEIVED_QUICKSELL_INITDATA'
-
-export function requestQuickSellType() {
-  return (dispatch) => {
-    return fetch('/src/examples/data.json')
-      .then(resp => resp.json())
-      .then(json => dispatch(receivedQuickSellType(json)))
-  }
-}
-
-function receivedQuickSellType(quicksellTypes) {
-  const { sellType, creditType, documentType ,regin } = quicksellTypes
-  return {
-    type: RECEIVED_QUICKSELL_INITDATA,
-    sellTypes: sellType,
-    creditTypes: creditType,
-    docTypes: documentType,
-    regin: regin
-  }
-}
 

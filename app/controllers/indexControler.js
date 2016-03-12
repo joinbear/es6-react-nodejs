@@ -12,6 +12,9 @@ module.exports = function(app){
 			showLeft : false
 		});
 	});
+	app.post('/ekp/form/',function (req, res){
+		console.log(req.body);
+	});
 	//新增页面
 	app.all('*/add',function (req, res){
 		//获取模板的目录
