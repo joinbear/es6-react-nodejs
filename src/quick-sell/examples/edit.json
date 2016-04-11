@@ -1,0 +1,230 @@
+{
+	"sellType":[{
+		"value" : 1,
+		"label":"押证"
+	},{
+		"value" : 2,
+		"label":"押证"
+	},{
+		"value" : 3,
+		"label":"押证"
+	}],
+	"creditType":[{
+		"value" : 1,
+		"label":"合同房",
+		"type":"contract"
+	},{
+		"value" : 2,
+		"label":"产权房",
+		"type":"credit"
+	},{
+		"value" : 3,
+		"label":"安置房",
+		"type":"placement"
+	}],
+  "dutyType":[{
+    "value" : 4,
+    "label":"区责",
+    "type":"placement"
+  },{
+    "value" : 5,
+    "label":"组责",
+    "type":"placement"
+  },{
+    "value" : 6,
+    "label":"非责",
+    "type":"placement"
+  }],
+	"documentType":{
+		"contract":[{
+      "value":"146a910089d0618f8f2f27346d698989",
+      "label":"共有权证"
+      },{
+        "value":"146a90f9726beb6c389d7094037ad20c",
+        "label":"国土证原件"
+      },{
+        "value":"146a910089d0618f8f2f27346d68e081",
+        "label":"房产证原件"
+      },{
+        "value":"146a9103f0ebd69ba8ac53e491f8978d",
+        "label":"购房合同原件"
+      },{
+        "value":"146a9107929d5c13894ea4149e187a1c",
+        "label":"2本结婚证+权属证明复印件"
+      },{
+        "value":"146a910e85e8bb63f3eafe24d9faee76",
+        "label":"户口本+权属证明复印件"
+      },{
+        "value":"146a91120759370eef1521c44eabc67b",
+        "label":"1本离婚证原件"
+      },{
+        "value":"146a9115c27986f807afaa2455b9d850",
+        "label":"（房屋权属）民事调解书原件"
+      },{
+        "value":"146a911edc8ff022616875c443b9a534",
+        "label":"（房屋权属）民事判决书原件"
+      },{
+        "value":"14e1e177fec09072306f3504c6da3e28",
+        "label":"抵押合同和借款合同原件"
+    }],
+		"credit" : [{
+      "value":"146a9120fa83a9ba832130e4b97a6dde",
+      "label":"购房合同原件"
+    },{
+      "value":"146a912ead537b5003378f94c348cd39",
+      "label":"借款合同原件"
+    },{
+      "value":"146a915a448c221cc422e6940b6a4bab",
+      "label":"2本结婚证+权属证明复印件"
+    },{
+      "value":"146a915f18df90f12f98c5d437790071",
+      "label":"户口本+权属证明复印件"
+    },{
+      "value":"146a91643d44bf2a69c6d5d4db6b4e7a",
+      "label":"1本离婚证原件"
+    },{
+      "value":"146a91698e91730fdc58b74439898f77",
+      "label":"（房屋权属）民事调解书原件"
+    },{
+      "value":"146a916ba4cc5daec5881174adebc27d",
+      "label":"（房屋权属）民事判决书原件"
+    },{
+      "value":"14e1e187107d668513199f44c6fbe89a",
+      "label":"抵押合同和借款合同原件"
+		}],
+	"placement":[{
+    "value":"146a916f1d734a3a66a6f4f431d81c03",
+    "label":"成都市城镇房屋拆迁补偿安置合同"
+    },
+    {
+      "value":"146a916f1d734a3a66a6f4f431d81c02",
+      "label":"危旧房改造分户产权收条原件（鲜章）"
+    }]
+	},
+	"regin":[{
+    "id": "0802291715143DBDAF5254D0DB8FAF44",
+    "name": "万年场区"
+  },{
+    "id": "0802291715575BF678706D795EA0FB88",
+    "name": "金沙区"
+  },{
+    "id": "0912021732103100B9B279252FD34745",
+    "name": "金融城区"
+  },{
+    "id": "1101031006415E9E319FDF47B521AB48",
+    "name": "少城区"
+  },{
+    "id": "11010310073150F786824A6DCDCDB88A",
+    "name": "双楠区"
+  },{
+    "id": "1101031008460C4722C8AE4076F5A47C",
+    "name": "川师区"
+  },{
+    "id": "1312021136571324FBAF1B8141F3DCF0",
+    "name": "升仙湖区"
+  },{
+    "id": "131202133210384D8602F744F0C92D28",
+    "name": "天府区"
+  },{
+    "id": "1312021334452DB719C84DC7BFC0DB37",
+    "name": "郫县区"
+  },{
+    "id": "131202133645A34122C661A8CC582175",
+    "name": "光华区"
+  },{
+    "id": "E140092",
+    "name": "分销西北区"
+  },{
+    "id": "E150021",
+    "name": "人员待分配中心"
+  },{
+    "id": "E140103",
+    "name": "大源区"
+  },{
+    "id": "E140099",
+    "name": "龙泉区"
+  },{
+    "id": "E140093",
+    "name": "分销东区"
+  },{
+    "id": "E190012",
+    "name": "人员待分配中心"
+  },{
+    "id": "E140094",
+    "name": "分销南区"
+  },{
+    "id": "E140111",
+    "name": "商业地产分销部"
+  },{
+    "id": "E140112",
+    "name": "商业地产直销部"
+  },{
+    "id": "E140104",
+    "name": "房江湖"
+  },{
+    "id": "150302121611CEB90B377ACEA3ADA6A3",
+    "name": "顺城区"
+  },{
+    "id": "150302121808B6C7FBEE67CD839B9359",
+    "name": "红牌楼区"
+  },{
+    "id": "15030212132984D91832AE7FED78F375",
+    "name": "东湖区"
+  },{
+    "id": "150302121533DBFB8A45FBA5FC5EDA5E",
+    "name": "交大区"
+  },{
+    "id": "150302121717310476D47A21BD2E3CFE",
+    "name": "温江区"
+  },{
+    "id": "150302121959A10DC7D942ACCCB108CC",
+    "name": "桐梓林区"
+  },{
+    "id": "E140109",
+    "name": "直销南二区"
+  },{
+    "id": "E140108",
+    "name": "分销西南区"
+  },{
+    "id": "E140110",
+    "name": "直销西区"
+  },{
+    "id": "E140102",
+    "name": "直销南一区"
+  },{
+    "id": "E140101",
+    "name": "直销东区"
+  },{
+    "id": "E140107",
+    "name": "新房事业部"
+  },{
+    "id": "E140100",
+    "name": "商业地产部"
+  },{
+    "id": "E140114",
+    "name": "双流区"
+  }],
+  "formNames":{
+    "foldAreaId":"",
+    "foldShopId":"",
+    "foldUserName":"南宫.段端",
+    "seNumber":"20132105",
+    "monthNumber":"2",
+    "contractType":"0",
+    "contractNo":"3906732",
+    "availabilityNo":"CDJN91588600",
+    "housesName":"光荣西路29号",
+    "ownerName":"杨粒力",
+    "ownerTel":"13688148271",
+    "quicksellType":"1",
+    "cashPledge":"5000",
+    "dutyType":"4",
+    "foldTime":"2016-03-23",
+    "businessManager":"",
+    "beginDate":"2016-02-01",
+    "endDate":"2016-03-24",
+    "businessManagerLink":"18783980111",
+    "bankCard":"4392268386247930",
+    "inventoryStatus":"0"
+  }
+}
