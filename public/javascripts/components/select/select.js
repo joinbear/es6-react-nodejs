@@ -112,6 +112,7 @@ const Select = React.createClass({
 				parentClassName={this.state.parentClassName}
 				expanded={this.state.expanded}
 				rel={this.state.name}
+				name={this.state.name}
 				selectText={this.state.selectText}
 				selectValue={this.state.selectValue}
 				options={this.state.options} 
@@ -135,17 +136,15 @@ const Select = React.createClass({
   		break;
   		case 'horizontal':
   			return (
-  				<DirectComponent className="form-horizontal" validateClass={this.state.validateClass}>
+  				<DirectComponent className="form-inline" direct="horizontal" validateClass={this.state.validateClass}>
   					<Tips 
 							position="top"
 							tipText={this.state.tipText} />
 		  			<Label 
-		  				className="control-label col-sm-5"
+		  				className="control-label"
 		  				required={this.state.required} 
 		  				text={this.state.labelName} />
-		  			<div className="col-sm-7">
-		  				{DefaultSelect}
-		  			</div>
+		  			{DefaultSelect}
 		  		</DirectComponent>
   			);
   		break;

@@ -85,7 +85,7 @@ const Input = React.createClass({
 	      tipText : tipText
 	    });
       this.props.onChange(validate,this.state.name);
-      
+
     }
   },
 
@@ -144,18 +144,16 @@ const Input = React.createClass({
   		break;
   		case 'horizontal':
   			return (
-  				<DirectComponent className="form-horizontal" validateClass={this.state.validateClass}>
+  				<DirectComponent className="form-inline" direct="horizontal" validateClass={this.state.validateClass}>
   					<Tips 
 							position="top"
 							tipText={this.state.tipText} />
 		  			<Label 
-		  				className="control-label col-sm-5"
+		  				className="control-label"
 		  				required={this.state.required} 
 		  				text={this.state.labelName} />
-		  			<div className="col-sm-7">
-		  				{Input}
-		  				<Feedback iconType={this.state.iconType}/>
-		  			</div>
+		  			{Input}
+            <Feedback iconType={this.state.iconType}/>
 		  		</DirectComponent>
   			);
   		break;

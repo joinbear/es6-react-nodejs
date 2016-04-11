@@ -81,6 +81,7 @@ const DatePicker = React.createClass({
 	      iconType : iconType,
 	      tipText : tipText
 	    });
+      this.props.onChange(validate,this.state.name);
     }
   },
 
@@ -140,18 +141,16 @@ const DatePicker = React.createClass({
   		break;
   		case 'horizontal':
   			return (
-  				<DirectComponent className="form-horizontal" validateClass={this.state.validateClass}>
+  				<DirectComponent className="form-inline" direct="horizontal" validateClass={this.state.validateClass}>
   					<Tips 
 							position="top"
 							tipText={this.state.tipText} />
 		  			<Label 
-		  				className="control-label col-sm-5"
+		  				className="control-label"
 		  				required={this.state.required} 
 		  				text={this.state.labelName} />
-		  			<div className="col-sm-7">
-		  				{Dater}
-		  				<Feedback iconType={this.state.iconType}/>
-		  			</div>
+		  			{Dater}
+            <Feedback iconType={this.state.iconType}/>
 		  		</DirectComponent>
   			);
   		break;

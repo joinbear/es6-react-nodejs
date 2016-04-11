@@ -63,6 +63,7 @@ module.exports = {
     'react': 'React',
     'react-dom' : 'ReactDOM',
     'jquery' : 'jQuery', 
-    'wdate-picker' : 'WdatePicker' 
+    'wdate-picker' : 'WdatePicker', 
+    'layer' : 'layer'
   }
 };
