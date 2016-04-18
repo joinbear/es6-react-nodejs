@@ -1,8 +1,9 @@
 import express from 'express';
+import Department from '../model';
 
 const router = express.Router();
 
-
+const department = new Department();
 //获取区域
 router.get('/regin',(req, res)=>{
 	res.json({
@@ -163,15 +164,31 @@ router.get('/regin',(req, res)=>{
 });
 
 //获取商圈
-router.get('/subregin/:regin-id',(req, res)=>{
+router.get('/subregin/:reginid',(req, res)=>{
 	res.json({
+		"subregin":[{
+	    "id": "0802291715143DBDAF5254D0DB8FAF44",
+	    "name": "万年场区"
+	  },{
+	    "id": "0802291715575BF678706D795EA0FB88",
+	    "name": "金沙区"
+	  },{
+	    "id": "0912021732103100B9B279252FD34745",
+	    "name": "金融城区"
+	  }]
 	});
 });
 
 //获取店组
-router.get('/store/subregin-id',(req, res)=>{
-	res.json({
-	});
+router.get('/store/:subreginid',(req, res)=>{
+	department
+	.getRegin()
+	.then(function(value){
+		res.end(value.text);
+	},function(){
+
+	})
+	
 });
 
 const DeptRouter = router;

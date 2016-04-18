@@ -19,7 +19,7 @@ class ParamHandler {
 		this.app = app;
 	}
 	init() {
-		this.setCompress();
+		//this.setCompress();
 		this.setView();
 		this.setStatic();
 		this.setUpload();

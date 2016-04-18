@@ -214,3 +214,279 @@ Error: Not Found
     at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
     at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+[Mon Apr 18 2016 14:53:26 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 14:54:04 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 14:54:38 GMT+0800 (CST)] /ekp/dept/store
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 14:54:44 GMT+0800 (CST)] /ekp/dept/store/
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:00:56 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:01:04 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:01:38 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:02:03 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:02:07 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:02:20 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:02:22 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:02:28 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:03:39 GMT+0800 (CST)] /ekp/dept/store/123
+Error: Not Found
+    at /Users/qiaoni/ekp/app/config/error.js:40:16
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:312:13)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:618:15
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:176:3)
+    at router (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:46:12)
+[Mon Apr 18 2016 15:18:48 GMT+0800 (CST)] /ekp/dept/store/123
+ReferenceError: department is not defined
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+[Mon Apr 18 2016 15:19:16 GMT+0800 (CST)] /ekp/dept/store/123
+ReferenceError: department is not defined
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+[Mon Apr 18 2016 15:19:19 GMT+0800 (CST)] /ekp/dept/store/123
+ReferenceError: department is not defined
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+[Mon Apr 18 2016 15:19:56 GMT+0800 (CST)] /ekp/dept/store/123
+ReferenceError: department is not defined
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:14
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:271:10)
+[Mon Apr 18 2016 15:27:41 GMT+0800 (CST)] /ekp/dept/store/123
+TypeError: Cannot read property 'then' of undefined
+    at Department.getRegin (/Users/qiaoni/ekp/app/apps/department/model/index.js:29:57)
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:25
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+[Mon Apr 18 2016 15:32:32 GMT+0800 (CST)] /ekp/dept/store/123
+TypeError: Cannot read property 'then' of undefined
+    at Department.getRegin (/Users/qiaoni/ekp/app/apps/department/model/index.js:29:57)
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:198:21
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+[Mon Apr 18 2016 15:32:38 GMT+0800 (CST)] /ekp/dept/store/123
+TypeError: Cannot read property 'then' of undefined
+    at Department.getRegin (/Users/qiaoni/ekp/app/apps/department/model/index.js:29:57)
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:198:21
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+[Mon Apr 18 2016 15:33:03 GMT+0800 (CST)] /ekp/dept/store/123
+TypeError: Cannot read property 'then' of undefined
+    at Department.getRegin (/Users/qiaoni/ekp/app/apps/department/model/index.js:29:57)
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:25
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+[Mon Apr 18 2016 15:33:04 GMT+0800 (CST)] /ekp/dept/store/123
+TypeError: Cannot read property 'then' of undefined
+    at Department.getRegin (/Users/qiaoni/ekp/app/apps/department/model/index.js:29:57)
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:25
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
+[Mon Apr 18 2016 16:07:08 GMT+0800 (CST)] /ekp/dept/store/123
+TypeError: Cannot read property 'then' of undefined
+    at Department.getRegin (/Users/qiaoni/ekp/app/apps/department/model/index.js:29:57)
+    at /Users/qiaoni/ekp/app/apps/department/action/index.js:197:25
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/Users/qiaoni/ekp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/qiaoni/ekp/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/qiaoni/ekp/node_modules/express/lib/router/index.js:277:22
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:349:14)
+    at param (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/qiaoni/ekp/node_modules/express/lib/router/index.js:410:3)
