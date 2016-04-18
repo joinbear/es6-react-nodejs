@@ -16,22 +16,26 @@ var _error = require('./config/error');
 
 var _error2 = _interopRequireDefault(_error);
 
-var _quickSellController = require('./controllers/quick-sell-controller');
+var _action = require('./apps/quick-sell/action');
 
-var _quickSellController2 = _interopRequireDefault(_quickSellController);
+var _action2 = _interopRequireDefault(_action);
 
-var _apiController = require('./controllers/api-controller');
+var _action3 = require('./apps/api-doc/action');
 
-var _apiController2 = _interopRequireDefault(_apiController);
+var _action4 = _interopRequireDefault(_action3);
 
-var _filterController = require('./controllers/filter-controller');
+var _action5 = require('./apps/department/action');
+
+var _action6 = _interopRequireDefault(_action5);
+
+var _action7 = require('./apps/filter/action');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const app = new _express2.default();
 const param = new _params2.default(app);
 const error = new _error2.default(app);
-const filter = new _filterController.Filter(app);
+const filter = new _action7.Filter(app);
 
 //---------params config -----------
 
@@ -41,13 +45,16 @@ param.init();
 filter.init();
 
 //---------- 拦截路由 ----------------
-app.use('/filter', _filterController.filterRouter);
+app.use('/filter', _action7.FilterRouter);
 
 //---------- 速销入口 ----------------
-app.use('/ekp/quick-sell', _quickSellController2.default);
+app.use('/ekp/quick-sell', _action2.default);
+
+//---------- 部门接口 ----------------
+app.use('/ekp/dept', _action6.default);
 
 //---------- 接口文档 -----------------
-app.use('/api', _apiController2.default);
+app.use('/api', _action4.default);
 
 //--------- handle error ---------------
 error.init();

@@ -1,9 +1,10 @@
 import express  from 'express';
 import ParamHandler  from  './config/params';
 import ErrorHandler  from './config/error';
-import quickSellRouter from'./controllers/quick-sell-controller';
-import apiRouter from './controllers/api-controller';
-import { Filter , filterRouter}  from './controllers/filter-controller';
+import QuickSellRouter from'./apps/quick-sell/action';
+import ApiRouter from './apps/api-doc/action';
+import DeptRouter from './apps/department/action';
+import { Filter , FilterRouter}  from './apps/filter/action';
 
 
 
@@ -21,13 +22,16 @@ param.init();
 filter.init();
 
 //---------- 拦截路由 ----------------
-app.use('/filter',filterRouter);
+app.use('/filter',FilterRouter);
 
 //---------- 速销入口 ----------------
-app.use('/ekp/quick-sell',quickSellRouter);
+app.use('/ekp/quick-sell',QuickSellRouter);
+
+//---------- 部门接口 ----------------
+app.use('/ekp/dept',DeptRouter);
 
 //---------- 接口文档 -----------------
-app.use('/api',apiRouter);
+app.use('/api',ApiRouter);
 
 
 //--------- handle error ---------------

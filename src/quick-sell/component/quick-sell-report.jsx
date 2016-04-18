@@ -1,7 +1,8 @@
 import React , { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { requestQuickSellInitData , requestQuickSellSubreginData ,requestQuickSellGetPerson , requestStores } from '../actions/fetch-action';
+import { requestRegin , requestSubRegin , requestStore} from '../../common-reducer/action';
+import { requestQuickSellInitData } from '../actions/fetch-action';
 import { handleQuickSellType , handleQuickSellChooseType } from '../actions/logic-action';
 import { Select, Radio, Breadcrumb , Row , Col , Input ,Checkbox, Button, DatePicker, InputNumber, Form, Cascader } from 'antd';
 const Option = Select.Option;
@@ -41,8 +42,9 @@ class Report extends Component {
     }
   }
   componentWillMount() {
-    const { requestQuickSellInitData , reportType } = this.props;
+    const { requestQuickSellInitData , reportType , requestRegin} = this.props;
     requestQuickSellInitData(reportType);
+    requestRegin();
   }
   handleReset(e) {
     e.preventDefault();
@@ -113,9 +115,8 @@ class Report extends Component {
 			reportType,
 			handleQuickSellType,
 			handleQuickSellChooseType,
-			requestQuickSellSubreginData,
-			requestQuickSellGetPerson,
-			requestStores
+			requestSubRegin,
+			requestStore,
 		} = this.props;
 		const { getFieldProps } = this.props.form;
     const formItemLayout = {
@@ -133,7 +134,7 @@ class Report extends Component {
 		          <Select
 		          	{...this.handleField('foldAreaId')}
 		          	placeholder="请选择合同类型"
-		          	onSelect={(value)=>requestQuickSellSubreginData(value)}>
+		          	onSelect={(value)=>requestSubRegin(value)}>
 		          		{this.handleOptions(regin,{"value":"id","label":"name"})}
 		          </Select>
 		        </FormItem>
@@ -145,7 +146,7 @@ class Report extends Component {
 		          <Select
 		          	{...this.handleField('foldShopId')} 
 		          	placeholder="请选择商圈"
-		          	onSelect={(value)=>requestStores(value)}>
+		          	onSelect={(value)=>requestStore(value)}>
 		          	{this.handleOptions(subregin,{"value":"id","label":"name"})}
 		          </Select>
 		        </FormItem>
@@ -401,45 +402,37 @@ class Report extends Component {
   }
 };
 
-
 function mapStateToProps(state) {
 	return {
-		title: state.report.title,
-    contractType : state.common.contractType,
-    inventoryStatus : state.common.inventoryStatus,
-    breadCrumb : state.report.breadCrumb,
-    quicksellType : state.common.quicksellType,
-    isShowType: state.report.isShowType,
-    isShowMoney: state.report.isShowMoney,
-    creditTypes: state.report.creditTypes,
-    equityName: state.report.equityName,
-    dutyType: state.report.dutyType,
-    isShowType : state.report.isShowType,
-    isShowMoney : state.report.isShowMoney,
-    isEditPage : state.report.isEditPage,
-    formNames : state.report.formNames,
-    regin : state.common.regin,
-    subregin : state.common.subregin,
-    stores : state.common.stores,
-    person : state.report.person
+		title           : state.report.title,
+		contractType    : state.common.contractType,
+		inventoryStatus : state.common.inventoryStatus,
+		breadCrumb      : state.report.breadCrumb,
+		quicksellType   : state.common.quicksellType,
+		isShowType      : state.report.isShowType,
+		isShowMoney     : state.report.isShowMoney,
+		creditTypes     : state.report.creditTypes,
+		equityName      : state.report.equityName,
+		dutyType        : state.report.dutyType,
+		isEditPage      : state.report.isEditPage,
+		formNames       : state.report.formNames,
+		regin           : state.commonReducer.regin,
+		subregin        : state.commonReducer.subregin,
+		stores          : state.commonReducer.stores,
+		person          : state.commonReducer.person
 	};
 }
-
 
 function mapDispatchToProps(dispatch){
 	return bindActionCreators({
 		requestQuickSellInitData,
 		handleQuickSellType,
 		handleQuickSellChooseType,
-		requestQuickSellSubreginData,
-		requestQuickSellGetPerson,
-		requestStores
+		requestSubRegin,
+		requestStore,
+		requestRegin
 	},dispatch)
 }
 
 Report = createForm()(Report);
-
-
 export default connect(mapStateToProps,mapDispatchToProps)(Report);
-
-

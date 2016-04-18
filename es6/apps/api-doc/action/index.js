@@ -2,11 +2,11 @@ import express from 'express';
 import raml2html from 'raml2html';
 
 
-const apiRouter = express.Router();
+const ApiRouter = express.Router();
 const configWithDefaultTemplates = raml2html.getDefaultConfig();
 
 
-apiRouter.get('/:api',function(req,res){
+ApiRouter.get('/:api',function(req,res){
 	// console.log(process.cwd() + '/raml/'+ req.params.api +'/api.raml');
 	// console.log(configWithDefaultTemplates);
 	// source can either be a filename, url, file contents (string) or parsed RAML object
@@ -20,4 +20,4 @@ apiRouter.get('/:api',function(req,res){
 });
 
 
-export default apiRouter;
+export default ApiRouter;

@@ -1,0 +1,24 @@
+#%RAML 1.0
+title: quick-sell api
+version: v1
+baseUri: http://10.63.0.89:3000
+types:
+  TestType:
+    type: object
+    properties:
+      id: number
+      optional?: string
+      expanded:
+        type: object
+        properties:
+          count: number
+/quick-sell:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "message" : "Hello World"
+              }

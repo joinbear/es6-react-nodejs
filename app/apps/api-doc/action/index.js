@@ -14,10 +14,10 @@ var _raml2html2 = _interopRequireDefault(_raml2html);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const apiRouter = _express2.default.Router();
+const ApiRouter = _express2.default.Router();
 const configWithDefaultTemplates = _raml2html2.default.getDefaultConfig();
 
-apiRouter.get('/:api', function (req, res) {
+ApiRouter.get('/:api', function (req, res) {
 	// console.log(process.cwd() + '/raml/'+ req.params.api +'/api.raml');
 	// console.log(configWithDefaultTemplates);
 	// source can either be a filename, url, file contents (string) or parsed RAML object
@@ -30,4 +30,4 @@ apiRouter.get('/:api', function (req, res) {
 	});
 });
 
-exports.default = apiRouter;
+exports.default = ApiRouter;

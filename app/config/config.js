@@ -16,15 +16,5 @@ exports.default = {
 	host: 'localhost', //地址
 	port: 27017, //端口号
 	debug: true,
-	//微信企业好信息配置
-	wxConfig: {
-		token: 'FUPTsMEAOx7vDcNzxXCTKGCn7MJlYN',
-		encodingAESKey: 'Bi9VlDLFaDZYacyIl6FU0RF2FsOBrjyQE8oNx9FAalK',
-		corpId: 'wx356b2bdaf950ccc4'
-	},
-	//微信helper助手配置
-	helper: {
-		secret: 'Cl8ttjrhNbbe6dF2eKamtl-JLdjNvc6RjpKcFxj9HsLis-bDmdIGS95NIr54FxUQ',
-		agentid: '0'
-	}
+	api: 'http://10.63.0.69:8888/QuickSellAPI/v1/'
 };

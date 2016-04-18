@@ -1,0 +1,36 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _superagent = require('superagent');
+
+var _superagent2 = _interopRequireDefault(_superagent);
+
+var _config = require('../../config/config');
+
+var _config2 = _interopRequireDefault(_config);
+
+var _commonLib = require('../../lib/common-lib');
+
+var _commonLib2 = _interopRequireDefault(_commonLib);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+class Department {
+
+	contructor() {
+		this.host = _config2.default.api;
+	}
+
+	getRegin(conditions, type) {
+		const host = this.host;
+
+		_superagent2.default.get().end(function (err, res) {});
+	}
+	getSubregin(reginId) {}
+	getStore(subreginId) {}
+}
+
+exports.default = Department;

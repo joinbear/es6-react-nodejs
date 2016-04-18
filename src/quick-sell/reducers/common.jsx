@@ -32,6 +32,36 @@ const initialState = {
     "value" : 1,
     "label":"售单"
   }],
+  cashPayStatus : [{
+    "value" : 0,
+    "label":"未付款"
+  },{
+    "value" : 1,
+    "label":"已付款"
+  },{
+    "value" : 2,
+    "label":"不付款"
+  }],
+  cashRegainStatus : [{
+    "value" : 0,
+    "label":"未回收"
+  },{
+    "value" : 1,
+    "label":"已回收"
+  },{
+    "value" : 2,
+    "label":"已报赔"
+  },{
+    "value" : 3,
+    "label":"已续签"
+  }],
+  revisitStatus : [{
+    "value" : 0,
+    "label":"合格"
+  },{
+    "value" : 1,
+    "label":"不合格"
+  }],
   regin:[],
 	subregin:[],
 	stores:[],

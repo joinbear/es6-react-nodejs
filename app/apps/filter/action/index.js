@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Filter = exports.filterRouter = undefined;
+exports.Filter = exports.FilterRouter = undefined;
 
 var _express = require('express');
 
@@ -11,12 +11,12 @@ var _express2 = _interopRequireDefault(_express);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const filterRouter = _express2.default.Router();
+const FilterRouter = _express2.default.Router();
 
 class Filter {
 	constructor(app) {
 		this.app = app;
-		this.reg = /styleSheets|images|iconfonts|javascripts|filter|department/;
+		this.staticReg = /\/ekp\//;
 		this.init();
 	}
 	/**
@@ -25,37 +25,35 @@ class Filter {
   */
 	init() {
 		const app = this.app;
-		const reg = this.reg;
+		const staticReg = this.staticReg;
 
 		const that = this;
 		app.use(function (req, res, next) {
-			const allow = reg.test(req.url);
+			const allow = staticReg.test(req.url);
 			if (allow) {
-				next();
+				console.log('i come in filter=======>' + req.url);
+				that.filter(req, res, next);
 			} else {
 				next();
-				//that.filter(req, res, next);
 			}
 		});
 	}
 	/**
-  * [filter 拦截]
+  * [filter 拦截 如果有令牌，则让方法进入next，否则将其重定向到OA登录界面]
   * @return {[type]} [description]
   */
 	filter(req, res, next) {
-		console.log(req.url);
-		api.getUserIdByCode(req.query.code, function (err, result) {
-			console.log(result);
-			if (result.UserId) {
-				next();
-			} else {
-				res.redirect('/filter');
-			}
-		});
+		//console.log(req.headers);
+		//if(req.headers.token){
+		//	next();
+		//}else{
+		//	res.redirect('http://oa.ecen.com.cn/');
+		//}
+		next();
 	}
 }
 
-filterRouter.get('/', function (req, res) {
+FilterRouter.get('/', function (req, res) {
 	console.log(req.url);
 	res.render('filter/index', {
 		title: '身份验证',
@@ -63,5 +61,5 @@ filterRouter.get('/', function (req, res) {
 	});
 });
 
-exports.filterRouter = filterRouter;
+exports.FilterRouter = FilterRouter;
 exports.Filter = Filter;

@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
 import { Select, Breadcrumb , Row , Col , Input , Button, DatePicker, Form } from 'antd';
-import { requestQuickSellInitData , requestQuickSellSubreginData , requestStores } from '../actions/fetch-action';
+import { requestRegin , requestSubRegin , requestStore} from '../../common-reducer/action';
+import { requestQuickSellInitData , requestQuickSellList } from '../actions/fetch-action';
 const Option = Select.Option;
 const createForm = Form.create;
 const FormItem = Form.Item;
@@ -24,14 +25,15 @@ class SearchForm extends Component {
 		this.handleRangeDate = this.handleRangeDate.bind(this);
   }
   componentWillMount() {
-    const { requestQuickSellInitData } = this.props;
-    requestQuickSellInitData('add');
+    const { requestRegin } = this.props;
+    requestRegin();
   }
   handleReset(e) {
     e.preventDefault();
     this.props.form.resetFields();
   }
   handleSubmit(e) {
+  	const { requestQuickSellList } = this.props;
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((errors, values) => {
       if (!!errors) {
@@ -39,7 +41,8 @@ class SearchForm extends Component {
         return;
       }
       console.log('Submit!!!');
-      console.log(values);
+      requestQuickSellList(values);
+      // console.log(values);
     });
   }
   handleField(fieldName,initialValue,selfRules) {
@@ -78,12 +81,16 @@ class SearchForm extends Component {
   	 	inventoryStatus , 
   	 	quicksellType ,
   	 	contractType ,
+  	 	cashPayStatus ,
+  	 	cashRegainStatus ,
+  	 	revisitStatus ,
   	 	isAudit ,
   	 	regin ,
   	 	subregin,
-  	 	stores
+  	 	stores,
+  	 	requestSubRegin,
+  	 	requestStore
   	} = this.props;
-  	const { requestQuickSellSubreginData , requestStores } = this.props;
   	const beginDate = [];
   	this.handleField('beginCreateDate',conditions.beginCreateDate);
   	this.handleField('endCreateDate',conditions.endCreateDate);
@@ -166,11 +173,44 @@ class SearchForm extends Component {
 		      <Col span="6">
 		      	<FormItem
 		      		{...formItemLayout}
+			        label="回访状态：">
+			        <Select
+		          	{...this.handleField('revisitStatus',conditions.revisitStatus)}
+		          	placeholder="请选择回访状态">
+		          	{this.handleOptions(revisitStatus)}
+		          </Select>
+			      </FormItem>
+		      </Col>
+		      <Col span="6">
+		      	<FormItem
+		      		{...formItemLayout}
+			        label="保证金支付：">
+			        <Select
+		          	{...this.handleField('cashPayStatus',conditions.cashPayStatus)}
+		          	placeholder="请选择保证金支付状态">
+		          	{this.handleOptions(cashPayStatus)}
+		          </Select>
+			      </FormItem>
+		      </Col>
+		      <Col span="6">
+		      	<FormItem
+		      		{...formItemLayout}
+			        label="保证金回收：">
+			        <Select
+		          	{...this.handleField('cashRegainStatus',conditions.cashRegainStatus)}
+		          	placeholder="请选择保证金回收状态">
+		          	{this.handleOptions(cashRegainStatus)}
+		          </Select>
+			      </FormItem>
+		      </Col>
+		      <Col span="6">
+		      	<FormItem
+		      		{...formItemLayout}
 			        label="大区：">
 			        <Select
 		          	{...this.handleField('foldArea',conditions.foldArea)}
 		          	placeholder="请选择大区"
-		          	onSelect={(value)=>requestQuickSellSubreginData(value)}>
+		          	onSelect={(value)=>requestSubRegin(value)}>
 		          		{this.handleOptions(regin,{"value":"id","label":"name"})}
 		          </Select>
 			      </FormItem>
@@ -182,7 +222,7 @@ class SearchForm extends Component {
 			        <Select
 		          	{...this.handleField('foldShop',conditions.foldShop)}
 		          	placeholder="请选择大区"
-		          	onSelect={(value)=>requestStores(value)}>
+		          	onSelect={(value)=>requestStore(value)}>
 		          		{this.handleOptions(subregin,{"value":"id","label":"name"})}
 		          </Select>
 			      </FormItem>
@@ -198,7 +238,7 @@ class SearchForm extends Component {
 		          </Select>
 			      </FormItem>
 		      </Col>
-		      <Col span="10" offset="1" style={{ textAlign: 'right' }}>
+		      <Col span="12" offset="5" style={{ textAlign: 'right' }}>
 			      <Button onClick={this.handleSubmit}>查询</Button>&nbsp;&nbsp;&nbsp;
 			      <Button><Link to={'/ekp/quick-sell/add/'}>发布调入</Link></Button>&nbsp;&nbsp;&nbsp;
 			      <Button>报赔申请</Button>&nbsp;&nbsp;&nbsp;
@@ -212,22 +252,26 @@ class SearchForm extends Component {
 
 function mapStateToProps(state){
 	return {
-		conditions : state.list.conditions,
-		isAudit : state.list.isAudit,
-		inventoryStatus : state.common.inventoryStatus,
-		quicksellType : state.common.quicksellType,
-		contractType : state.common.contractType,
-		regin : state.common.regin,
-		subregin : state.common.subregin,
-		stores : state.common.stores,
+		conditions       : state.list.conditions,
+		isAudit          : state.list.isAudit,
+		inventoryStatus  : state.common.inventoryStatus,
+		quicksellType    : state.common.quicksellType,
+		contractType     : state.common.contractType,
+		cashPayStatus    : state.common.cashPayStatus,
+		cashRegainStatus : state.common.cashRegainStatus,
+		revisitStatus    : state.common.revisitStatus,
+		regin            : state.commonReducer.regin,
+		subregin         : state.commonReducer.subregin,
+		stores           : state.commonReducer.stores
 	};
 }
 
 function mapDispatchToProps(dispatch){
 	return bindActionCreators({
-		requestQuickSellInitData,
-		requestQuickSellSubreginData,
-		requestStores
+		requestQuickSellList,
+		requestSubRegin,
+		requestStore,
+		requestRegin
 	},dispatch);
 }
 

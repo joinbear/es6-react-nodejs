@@ -1,4 +1,4 @@
-import fetch from 'isomorphic-fetch';
+import { fetchUrl } from '../../common-reducer/function';
 import Constant from 'react-constant';
 const constants = Constant('quickSell');
 //============fetch data and pass the data to the reducer=======
@@ -10,9 +10,7 @@ const constants = Constant('quickSell');
 export function requestQuickSellInitData(type) {
   console.log(type);
   return (dispatch) => {
-    return fetch('/quick-sell/examples/'+type+'.json')
-      .then(resp => resp.json())
-      .then(json => dispatch(receivedQuickSellInitData(json)))
+    fetchUrl(dispatch,{ url : '/quick-sell/examples/'+type+'.json' , callback : receivedQuickSellInitData });
   }
 }
 
@@ -35,77 +33,31 @@ function receivedQuickSellInitData(quicksellInitData) {
 }
 
 /**
- * [requestSubreginById get the subregin json info by subregin id]
- * @param  {[type]} subreginId []
- * @return {[type]}            [description]
+ * [requestQuickSellInitData load the init data]
+ * @return {[type]} [pass the data to the receivedQuickSellInitData]
  */
-export function requestQuickSellSubreginData(reginId) {
+export function requestQuickSellList(conditions) {
+  console.log(conditions);
   return (dispatch) => {
-    return fetch('/quick-sell/examples/data1.json')
-      .then(resp => resp.json())
-      .then(json => dispatch(receivedQuickSellSubreginData(json)))
+    fetchUrl(dispatch,{ 
+      url : '/ekp/quick-sell/pagelist' , 
+      body : conditions,
+      method : 'POST',
+      callback : receivedQuickSellList 
+    });
   }
 }
-
 
 /**
- * [receivedQuickSellSubreginData get the subregin data and handle the logic]
- * @param  {[type]} quicksellSubreginData [subregin json data]
- * @return {[type]}                       [description]
+ * [receivedQuickSellInitData get the fetch json data and handle the logic]
+ * @param  {[type]} quicksellInitData [json data]
+ * @return {[type]}                   [description]
  */
-function receivedQuickSellSubreginData(quicksellSubreginData) {
-  const { subregin } = quicksellSubreginData;
+function receivedQuickSellList(listData) {
+  console.log(listData);
+  const { data } = listData;
   return {
-    type: constants.RECEIVED_SUBREGIN,
-    subregin : subregin
+    type : constants.RECEIVED_QUICKSELL_LISTDATA,
+    data : data
   }
 }
-
-
-export function requestStores(subreginId) {
-  console.log(subreginId);
-  return (dispatch) => {
-    console.log('-------');
-    return fetch('/quick-sell/examples/data1.json')
-      .then(resp => resp.json())
-      .then(json => dispatch(receivedStoreData(json)))
-  }
-}
-
-function receivedStoreData(storeData) {
-  const { subregin } = storeData;
-  return {
-    type: constants.RECEIVED_STORES,
-    stores : subregin
-  }
-}
-
-
-/**
- * [requestSubreginById get the subregin json info by subregin id]
- * @param  {[type]} subreginId []
- * @return {[type]}            [description]
- */
-export function requestQuickSellGetPerson(keyword) {
-  return (dispatch) => {
-    console.log('-------');
-    return fetch('/quick-sell/examples/data2.json')
-      .then(resp => resp.json())
-      .then(json => dispatch(receivedQuickSellPerson(json)))
-  }
-}
-
-
-/**
- * [receivedQuickSellSubreginData get the subregin data and handle the logic]
- * @param  {[type]} quicksellSubreginData [subregin json data]
- * @return {[type]}                       [description]
- */
-function receivedQuickSellPerson(quicksellPerson) {
-  const { person } = quicksellPerson;
-  return {
-    type: constants.RECEIVED_PERSON,
-    person : person
-  }
-}
-
