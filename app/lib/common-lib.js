@@ -8,10 +8,6 @@ var _superagent = require('superagent');
 
 var _superagent2 = _interopRequireDefault(_superagent);
 
-var _config = require('../config/config');
-
-var _config2 = _interopRequireDefault(_config);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 class CommonLibrary {
@@ -49,11 +45,14 @@ class CommonLibrary {
   * @param  {[type]} object [description]
   * @return {[type]}        [description]
   */
-	buildConfig(object) {
+	buildConfig(host, object) {
 		for (let key in object) {
-			object[key] = _config2.default.devhost + object[key];
+			object[key] = host + object[key];
 		}
 		return object;
+	}
+	dateToSecond(date) {
+		return Date.parse(new Date(date).getTime()) / 1000;
 	}
 }
 exports.default = CommonLibrary;

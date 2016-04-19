@@ -1,11 +1,17 @@
 import Constant from 'react-constant';
 const constants = Constant('quickSell');
 
+//获取日期，速销开始日期默认为一周
+const dateObject = new Date();
+const day = dateObject.getDate();
+const month = dateObject.getMonth();
+const year = dateObject.getFullYear();
+
 const initialState = {
 	conditions:{
 		searchkey : '',
-		beginCreateDate:'2016-02-15',
-		endCreateDate:'2016-02-25',
+		beginPubDate:new Date(year,month,day-7),
+		endPubDate:new Date(year,month,day),
 		beginQuicksellDate:null,
 		endQuicksellDate:null,
 		inventoryStatus:null,

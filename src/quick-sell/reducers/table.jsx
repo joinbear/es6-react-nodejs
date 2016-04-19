@@ -9,7 +9,8 @@ export default function table(state=initialState,action){
 	switch(action.type){
 		case constants.of('RECEIVED_QUICKSELL_LISTDATA'):
 			return Object.assign({},state,{
-				data : action.data
+				data : action.data , 
+				operation : action.operation 
 			});
 			break;
 		default :

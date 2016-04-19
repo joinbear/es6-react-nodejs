@@ -185,7 +185,7 @@ router.get('/store/:subreginid',(req, res)=>{
 	.getRegin()
 	.then(function(value){
 		res.end(value.text);
-	},function(){
+	},function(err){
 
 	})
 	

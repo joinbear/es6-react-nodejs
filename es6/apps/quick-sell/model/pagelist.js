@@ -1,22 +1,19 @@
 import superagent from 'superagent';
-import config from '../../config/config';
+import config from '../config/';
+import CommonLibrary from '../../../lib/common-lib';
 
-class QuickSellConditions {
+const comLib = new CommonLibrary();
+
+class QuickSellPageList {
 	
 	contructor() {
 		this.host = config.api;
 	}
 
-	getList(conditions,type) {
-		const { host } = this; 
-		superagent
-		.get()
-		.end(function(err,res){
-
-		})
+	getList(conditions) {
+		return comLib.getData(config.pagelist+'?page=1&rows=15&data='+conditions);
 	}
 
 }
 
-
-export default QuickSellConditions;
+export default QuickSellPageList;

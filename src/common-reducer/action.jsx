@@ -5,8 +5,8 @@ const constants = Constant('commonAction');
 
 const requestObject = {
   regin : '/ekp/dept/regin',
-  subregin : '/quick-sell/examples/data1.json',
-  stores : '/quick-sell/examples/data1.json',
+  subregin : '/ekp/dept/subregin/',
+  stores : '/ekp/dept/store/',
   person : '/quick-sell/examples/data2.json'
 }
 //============common action all the project use=================
@@ -40,7 +40,7 @@ function receiveRegin(reginData) {
 export function requestSubRegin(reginId) {
   const { subregin } = requestObject;
   return (dispatch) => {
-    fetchUrl(dispatch,{ url : subregin , callback : receiveSubRegin });
+    fetchUrl(dispatch,{ url : subregin + reginId, callback : receiveSubRegin });
   }
 }
 /**
@@ -63,7 +63,7 @@ function receiveSubRegin(subreginData) {
 export function requestStore(subreginId) {
   const { stores } = requestObject;
   return (dispatch) => {
-    fetchUrl(dispatch,{ url : stores , callback : receiveStore });
+    fetchUrl(dispatch,{ url : stores + subreginId, callback : receiveStore });
   }
 }
 /**

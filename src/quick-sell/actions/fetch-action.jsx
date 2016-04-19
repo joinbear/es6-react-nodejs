@@ -55,9 +55,10 @@ export function requestQuickSellList(conditions) {
  */
 function receivedQuickSellList(listData) {
   console.log(listData);
-  const { data } = listData;
+  const { data , operation } = listData;
   return {
     type : constants.RECEIVED_QUICKSELL_LISTDATA,
-    data : data
+    data : data , 
+    operation : operation
   }
 }

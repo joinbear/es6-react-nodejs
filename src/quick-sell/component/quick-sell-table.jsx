@@ -3,104 +3,13 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
 import { handleOperation } from '../actions/logic-action';
+import { formatDate } from '../../common-reducer/function';
 import { Table, Icon , Popconfirm , Spin , Popover , Modal, Button} from 'antd';
 import OperationComponent from './quick-sell-operation';
 class TableComponent extends Component {
   constructor(props) {
     super(props);
     this.displayName = 'TableComponent';
-    this.state = {
-    	columns : [{
-    		title: '序号',
-			  key: '1',
-			  dataIndex: 'index',
-			  className: 'center'
-    	},{
-    		title: '速销合同号',
-			  key: '2',
-			  dataIndex: 'contract',
-			  className: 'center',
-			  render(text,record){
-			  	const redirect = '/src/quick-sell/edit/' + text;
-			  	return(<Link to={redirect}>{text}</Link>);
-			  }
-    	},{
-    		title: '楼盘名称',
-			  key: '3',
-			  dataIndex: 'housesName',
-			  className: 'center'
-    	},{
-    		title: '房源编号',
-			  key: '4',
-			  dataIndex: 'houseNumber',
-			  className: 'center'
-    	},{
-    		title: '调入日期',
-			  key: '5',
-			  dataIndex: 'beginDate',
-			  className: 'center'
-    	},{
-    		title: '调入人',
-			  key: '6',
-			  dataIndex: 'person',
-			  className: 'center'
-    	},{
-    		title: '调入价(万)',
-			  key: '7',
-			  dataIndex: 'price',
-			  className: 'center'
-    	},{
-    		title: '证件',
-			  key: '8',
-			  dataIndex: 'credit',
-			  className: 'center'
-    	},{
-    		title: '下钱金额(元)',
-			  key: '9',
-			  dataIndex: 'money',
-			  className: 'center'
-    	},{
-    		title: '录入时间',
-			  key: '10',
-			  dataIndex: 'createTime',
-			  className: 'center'
-    	},{
-    		title: '当前状态',
-			  key: '11',
-			  dataIndex: 'status',
-			  className: 'center'
-    	},{
-    		title: '审核状态',
-			  key: '12',
-			  dataIndex: 'checkStatus',
-			  className: 'center',
-			  render:this.renderAction
-    	},{
-    		title: '支付状态',
-			  key: '13',
-			  dataIndex: 'payStatus',
-			  className: 'center',
-			  render:this.renderAction
-    	},{
-    		title: '回收状态',
-			  key: '14',
-			  dataIndex: 'recycleStatus',
-			  className: 'center',
-			  render:this.renderAction
-    	},{
-    		title: '回访状态',
-			  key: '15',
-			  dataIndex: 'visitStatus',
-			  className: 'center',
-			  render:this.renderAction
-    	},{
-    		title: '操作',
-			  key: '16',
-			  dataIndex: 'operation',
-			  className: 'center',
-			  render:this.renderOperation
-    	}]
-    };
 		this.renderAction    = this.renderAction.bind(this);
 		this.renderOperation = this.renderOperation.bind(this);
 		this.handleStatus    = this.handleStatus.bind(this);
@@ -212,17 +121,22 @@ class TableComponent extends Component {
   	}
   }
   render() {
+  	const { data , operation } = this.props;
+  	const renderContent = operation ? this.renderAction : '';
   	const columns = [{
     		title: '序号',
 			  key: '1',
-			  dataIndex: 'index',
-			  className: 'center'
+			  dataIndex: '',
+			  className: 'center',
+			  render(text, record, index) {
+			  	return index + 1;
+			  }
     	},{
     		title: '速销合同号',
 			  key: '2',
-			  dataIndex: 'contract',
+			  dataIndex: 'contractNo',
 			  className: 'center',
-			  render(text,record){
+			  render (text,record){
 			  	const redirect = '/ekp/quick-sell/edit/' + text;
 			  	return(<Link to={redirect}>{text}</Link>);
 			  }
@@ -234,75 +148,80 @@ class TableComponent extends Component {
     	},{
     		title: '房源编号',
 			  key: '4',
-			  dataIndex: 'houseNumber',
+			  dataIndex: 'availabilityNo',
 			  className: 'center'
     	},{
     		title: '调入日期',
 			  key: '5',
-			  dataIndex: 'beginDate',
-			  className: 'center'
+			  dataIndex: 'foldTime',
+			  className: 'center',
+			  render(text,record) {
+			  	return formatDate(text,'yyyy-MM-dd');
+			  }
     	},{
     		title: '调入人',
 			  key: '6',
-			  dataIndex: 'person',
+			  dataIndex: 'foldUserName',
 			  className: 'center'
     	},{
     		title: '调入价(万)',
 			  key: '7',
-			  dataIndex: 'price',
+			  dataIndex: 'foldMoney',
 			  className: 'center'
     	},{
     		title: '证件',
 			  key: '8',
-			  dataIndex: 'credit',
+			  dataIndex: 'credentials',
 			  className: 'center'
     	},{
     		title: '下钱金额(元)',
 			  key: '9',
-			  dataIndex: 'money',
+			  dataIndex: 'cashPledge',
 			  className: 'center'
     	},{
     		title: '录入时间',
 			  key: '10',
 			  dataIndex: 'createTime',
-			  className: 'center'
+			  className: 'center',
+			  render(text,record) {
+			  	return formatDate(text,'yyyy-MM-dd');
+			  }
     	},{
     		title: '当前状态',
 			  key: '11',
-			  dataIndex: 'status',
+			  dataIndex: 'inventoryStatus',
 			  className: 'center'
     	},{
     		title: '审核状态',
 			  key: '12',
-			  dataIndex: 'checkStatus',
+			  dataIndex: 'isAudit',
 			  className: 'center',
-			  render:this.renderAction
+			  render: renderContent
     	},{
     		title: '支付状态',
 			  key: '13',
-			  dataIndex: 'payStatus',
+			  dataIndex: 'cashPayStatus',
 			  className: 'center',
-			  render:this.renderAction
+			  render:renderContent
     	},{
     		title: '回收状态',
 			  key: '14',
-			  dataIndex: 'recycleStatus',
+			  dataIndex: 'cashRegainStatus',
 			  className: 'center',
-			  render:this.renderAction
+			  render:renderContent
     	},{
     		title: '回访状态',
 			  key: '15',
-			  dataIndex: 'visitStatus',
+			  dataIndex: 'revisitStatus',
 			  className: 'center',
-			  render:this.renderAction
+			  render:renderContent
     	},{
     		title: '操作',
 			  key: '16',
 			  dataIndex: 'operation',
 			  className: 'center',
-			  render:this.renderOperation
-    	}]
-  	const { data } = this.props;
+			  render: operation ? this.renderOperation : ''
+    	}];
     return (
     	<div>
     		<OperationComponent />
@@ -315,6 +234,7 @@ class TableComponent extends Component {
 function mapStateToProps(state){
 	return {
 		data : state.table.data,
+		operation : state.table.operation
 	};
 }
 

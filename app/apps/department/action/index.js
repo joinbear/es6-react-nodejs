@@ -196,7 +196,7 @@ router.get('/subregin/:reginid', (req, res) => {
 router.get('/store/:subreginid', (req, res) => {
 	department.getRegin().then(function (value) {
 		res.end(value.text);
-	}, function () {});
+	}, function (err) {});
 });
 
 const DeptRouter = router;

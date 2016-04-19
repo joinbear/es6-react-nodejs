@@ -1,5 +1,4 @@
 import superagent from 'superagent';
-import config from '../config/config';
 
 class CommonLibrary {
 	constructor() {
@@ -40,11 +39,14 @@ class CommonLibrary {
 	 * @param  {[type]} object [description]
 	 * @return {[type]}        [description]
 	 */
-	buildConfig(object) {
+	buildConfig(host,object) {
 		for(let key in object){
-			object[key] = config.devhost + object[key];
+			object[key] = host + object[key];
 		}
 		return object;
+	}
+	dateToSecond(date) {
+		return Date.parse( new Date(date).getTime() )/1000;
 	}
 }
 export default CommonLibrary;

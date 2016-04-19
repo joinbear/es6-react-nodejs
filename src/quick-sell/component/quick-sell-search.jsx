@@ -3,8 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
 import { Select, Breadcrumb , Row , Col , Input , Button, DatePicker, Form } from 'antd';
+//组织架构action引入
 import { requestRegin , requestSubRegin , requestStore} from '../../common-reducer/action';
+//交互action引入
 import { requestQuickSellInitData , requestQuickSellList } from '../actions/fetch-action';
+
 const Option = Select.Option;
 const createForm = Form.create;
 const FormItem = Form.Item;
@@ -24,14 +27,17 @@ class SearchForm extends Component {
 		this.handleReset     = this.handleReset.bind(this);
 		this.handleRangeDate = this.handleRangeDate.bind(this);
   }
+  //初始化数据加载
   componentWillMount() {
     const { requestRegin } = this.props;
     requestRegin();
   }
+  //处理表单重置
   handleReset(e) {
     e.preventDefault();
     this.props.form.resetFields();
   }
+  //查询事件
   handleSubmit(e) {
   	const { requestQuickSellList } = this.props;
     e.preventDefault();
@@ -45,6 +51,7 @@ class SearchForm extends Component {
       // console.log(values);
     });
   }
+  //表单验证功能
   handleField(fieldName,initialValue,selfRules) {
   	const { getFieldProps } = this.props.form;
   	const rule = Object.assign({},{
@@ -58,10 +65,12 @@ class SearchForm extends Component {
     });
   	return result;	
   }
+  //联动日期选择
   handleRangeDate(date1,date2,value){
-  	this.handleField(date1,value[0]);
-  	this.handleField(date2,value[1]);
+  	this.handleField(date1,value[0],{type:'date'});
+  	this.handleField(date2,value[1],{type:'date'});
   }
+  //处理下拉选择事件
   handleOptions(data,keyObject){
   	var options;
   	if(keyObject){
@@ -75,6 +84,7 @@ class SearchForm extends Component {
   	}
   	return options;
   }
+  //页面渲染
   render() {
   	const {
   		conditions ,
@@ -92,10 +102,10 @@ class SearchForm extends Component {
   	 	requestStore
   	} = this.props;
   	const beginDate = [];
-  	this.handleField('beginCreateDate',conditions.beginCreateDate);
-  	this.handleField('endCreateDate',conditions.endCreateDate);
-  	beginDate.push(conditions.beginCreateDate);
-  	beginDate.push(conditions.endCreateDate);
+  	this.handleField('beginPubDate',conditions.beginPubDate,{type:'date'});
+  	this.handleField('endPubDate',conditions.endPubDate,{type:'date'});
+  	beginDate.push(conditions.beginPubDate);
+  	beginDate.push(conditions.endPubDate);
     return (
     	<Form horizontal form={this.props.form} className="advanced-search-form">
     		<Row type="flex" justify="left" align="top">
@@ -114,7 +124,8 @@ class SearchForm extends Component {
 			        label="录入日期：">
 			        <RangePicker 
 			        	defaultValue={beginDate}
-			        	onChange={(value)=>this.handleRangeDate('beginCreateDate','endCreateDate',value)}/>
+			        	format="yyyy-MM-dd"
+			        	onChange={(value)=>this.handleRangeDate('beginPubDate','endPubDate',value)}/>
 			      </FormItem>
 		      </Col>
 		      <Col span="6">
@@ -122,7 +133,7 @@ class SearchForm extends Component {
 		      		{...formItemLayout}
 			        label="速销日期：">
 			        <RangePicker 
-			        	defaultValue={beginDate}
+			        	format="yyyy-MM-dd"
 			        	onChange={(value)=>this.handleRangeDate('beginQuicksellDate','endQuicksellDate',value)}/>
 			      </FormItem>
 		      </Col>
@@ -249,7 +260,7 @@ class SearchForm extends Component {
     );
   }
 }
-
+//属性接收
 function mapStateToProps(state){
 	return {
 		conditions       : state.list.conditions,
@@ -265,7 +276,7 @@ function mapStateToProps(state){
 		stores           : state.commonReducer.stores
 	};
 }
-
+//action接收
 function mapDispatchToProps(dispatch){
 	return bindActionCreators({
 		requestQuickSellList,
@@ -276,4 +287,5 @@ function mapDispatchToProps(dispatch){
 }
 
 SearchForm = createForm()(SearchForm);
+
 export default connect(mapStateToProps,mapDispatchToProps)(SearchForm);
