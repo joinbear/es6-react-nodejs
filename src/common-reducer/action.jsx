@@ -101,4 +101,3 @@ function receivePerson(personData) {
     person : person
   }
 }
-

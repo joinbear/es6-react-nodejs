@@ -2,6 +2,17 @@ import Constant from 'react-constant';
 const constants = Constant('quickSell');
 
 /**
+ * [handleLoading 处理load的逻辑以及按钮的可用与否]
+ * @return {[type]} [description]
+ */
+export function handleLoading() {
+  return {
+    type: constants.DATA_LOADING,
+    loading : true,
+    SearchBtn : 'disabled'
+  }
+}
+/**
  * [handleQuickSellType 押证和压钱的逻辑函数]
  * @param  {[type]} sellType [number]
  * @return {[type]}          [description]

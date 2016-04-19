@@ -4,9 +4,10 @@ import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
 import { Select, Breadcrumb , Row , Col , Input , Button, DatePicker, Form } from 'antd';
 //组织架构action引入
-import { requestRegin , requestSubRegin , requestStore} from '../../common-reducer/action';
+import { requestRegin , requestSubRegin , requestStore } from '../../common-reducer/action';
 //交互action引入
 import { requestQuickSellInitData , requestQuickSellList } from '../actions/fetch-action';
+import { handleLoading } from '../actions/logic-action';
 
 const Option = Select.Option;
 const createForm = Form.create;
@@ -39,7 +40,7 @@ class SearchForm extends Component {
   }
   //查询事件
   handleSubmit(e) {
-  	const { requestQuickSellList } = this.props;
+  	const { requestQuickSellList , handleLoading} = this.props;
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((errors, values) => {
       if (!!errors) {
@@ -47,6 +48,7 @@ class SearchForm extends Component {
         return;
       }
       console.log('Submit!!!');
+      handleLoading();
       requestQuickSellList(values);
       // console.log(values);
     });
@@ -99,7 +101,8 @@ class SearchForm extends Component {
   	 	subregin,
   	 	stores,
   	 	requestSubRegin,
-  	 	requestStore
+  	 	requestStore,
+  	 	SearchBtn
   	} = this.props;
   	const beginDate = [];
   	this.handleField('beginPubDate',conditions.beginPubDate,{type:'date'});
@@ -250,7 +253,7 @@ class SearchForm extends Component {
 			      </FormItem>
 		      </Col>
 		      <Col span="12" offset="5" style={{ textAlign: 'right' }}>
-			      <Button onClick={this.handleSubmit}>查询</Button>&nbsp;&nbsp;&nbsp;
+			      <Button onClick={this.handleSubmit} disabled={SearchBtn} >查询</Button>&nbsp;&nbsp;&nbsp;
 			      <Button><Link to={'/ekp/quick-sell/add/'}>发布调入</Link></Button>&nbsp;&nbsp;&nbsp;
 			      <Button>报赔申请</Button>&nbsp;&nbsp;&nbsp;
 			      <Button>导出EXCEL</Button>
@@ -265,6 +268,7 @@ function mapStateToProps(state){
 	return {
 		conditions       : state.list.conditions,
 		isAudit          : state.list.isAudit,
+		SearchBtn          : state.list.SearchBtn,
 		inventoryStatus  : state.common.inventoryStatus,
 		quicksellType    : state.common.quicksellType,
 		contractType     : state.common.contractType,
@@ -282,7 +286,8 @@ function mapDispatchToProps(dispatch){
 		requestQuickSellList,
 		requestSubRegin,
 		requestStore,
-		requestRegin
+		requestRegin,
+		handleLoading
 	},dispatch);
 }
 

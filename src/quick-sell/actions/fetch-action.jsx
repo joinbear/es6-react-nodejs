@@ -59,6 +59,12 @@ function receivedQuickSellList(listData) {
   return {
     type : constants.RECEIVED_QUICKSELL_LISTDATA,
     data : data , 
-    operation : operation
+    operation : operation ,
+    loading : false,
+    SearchBtn : ''
   }
+}
+
+export function fetchOperation(contractId,type){
+  console.log(contractId);
 }

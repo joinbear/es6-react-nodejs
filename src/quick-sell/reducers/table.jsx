@@ -2,7 +2,9 @@ import Constant from 'react-constant';
 const constants = Constant('quickSell');
 
 const initialState = {
-	data : []
+	data : [],
+	loading : false,
+	operation : false
 }
 
 export default function table(state=initialState,action){
@@ -10,7 +12,13 @@ export default function table(state=initialState,action){
 		case constants.of('RECEIVED_QUICKSELL_LISTDATA'):
 			return Object.assign({},state,{
 				data : action.data , 
-				operation : action.operation 
+				operation : action.operation,
+				loading : action.loading 
+			});
+			break;
+		case constants.of('DATA_LOADING'):
+			return Object.assign({},state,{
+				loading : action.loading 
 			});
 			break;
 		default :

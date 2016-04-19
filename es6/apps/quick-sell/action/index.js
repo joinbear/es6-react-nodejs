@@ -13,7 +13,7 @@ router.get('/*',(req, res)=>{
 });
 
 router.post('/pagelist',(req, res)=>{
-	console.log(req.body);
+	//console.log(req.body);
 	const body = req.body;
 	const conditions = {
 		"beginPubDate" : comLib.dateToSecond(body.beginPubDate),
@@ -31,7 +31,7 @@ router.post('/pagelist',(req, res)=>{
 			}else{
 				res.json(resData);
 			}
-			console.log( JSON.parse(result.text) );
+			//console.log( JSON.parse(result.text) );
 		},function(err){
 			console.error(err);
 		})

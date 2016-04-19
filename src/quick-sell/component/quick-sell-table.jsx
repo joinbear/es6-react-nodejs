@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
 import { handleOperation } from '../actions/logic-action';
+import { fetchOperation } from '../actions/fetch-action';
 import { formatDate } from '../../common-reducer/function';
 import { Table, Icon , Popconfirm , Spin , Popover , Modal, Button} from 'antd';
 import OperationComponent from './quick-sell-operation';
@@ -14,6 +15,7 @@ class TableComponent extends Component {
 		this.renderOperation = this.renderOperation.bind(this);
 		this.handleStatus    = this.handleStatus.bind(this);
 		this.cancel          = this.cancel.bind(this);
+		this.confirm          = this.confirm.bind(this);
   }
   handleStatus(type,contractNo){
   	const { handleOperation } = this.props;
@@ -26,15 +28,15 @@ class TableComponent extends Component {
 	  console.log('点击了取消');
 	}
 	renderOperation(text, record){
-		const deleteTitle = '是否删除合同号为' + record.contract + '的速销数据';
-		const releaseTitle = '是否解约合同号为' + record.contract + '的速销数据';
+		const deleteTitle = '是否删除合同号为' + record.contractNo + '的速销数据';
+		const releaseTitle = '是否解约合同号为' + record.contractNo + '的速销数据';
 		return (
       <span>
-        <a href="javascript:;" onClick={()=>this.handleStatus('compensate',record.contract)}>报赔</a>
+        <a href="javascript:;" onClick={()=>this.handleStatus('compensate',record.contractNo)}>报赔</a>
         <span className="ant-divider"></span>
-        <a href="javascript:;" onClick={()=>this.handleStatus('resigner',record.contract)}>续签</a>
+        <a href="javascript:;" onClick={()=>this.handleStatus('resigner',record.contractNo)}>续签</a>
         <span className="ant-divider"></span>
-        <a href="javascript:;" onClick={()=>this.handleStatus('recycle',record.contract)}>回收</a>
+        <a href="javascript:;" onClick={()=>this.handleStatus('recycle',record.contractNo)}>回收</a>
         <span className="ant-divider"></span>
         <Popconfirm 
         	placement="leftBottom" 
@@ -76,12 +78,12 @@ class TableComponent extends Component {
       		</Popover>
       	);
 			case '未审核':
-				const title = '是否审核合同' + record.contract;
+				const title = '是否审核合同' + record.contractNo;
 				return (
 					<Popconfirm 
 						title={title} 
 						okText="审核"
-						onConfirm={()=>this.confirm} 
+						onConfirm={fetchOperation(record.contractNo)} 
 						onCancel={()=>this.cancel}>
 						<a href="javascript:;">未审核</a>
 					</Popconfirm>
@@ -113,15 +115,15 @@ class TableComponent extends Component {
       		</Popover>
       	);
 			case '合格':
-				return (<a href="javascript:;" onClick={()=>this.handleStatus('visitStatus',record.contract)}>合格</a>);
+				return (<a href="javascript:;" onClick={()=>this.handleStatus('visitStatus',record.contractNo)}>合格</a>);
 			case '不合格':
-				return (<a href="javascript:;" onClick={()=>this.handleStatus('visitStatus',record.contract)}>不合格</a>);
+				return (<a href="javascript:;" onClick={()=>this.handleStatus('visitStatus',record.contractNo)}>不合格</a>);
   		default :
   			return (<span>{text}</span>);
   	}
   }
   render() {
-  	const { data , operation } = this.props;
+  	const { data , operation , loading } = this.props;
   	const renderContent = operation ? this.renderAction : '';
   	const columns = [{
     		title: '序号',
@@ -225,7 +227,7 @@ class TableComponent extends Component {
     return (
     	<div>
     		<OperationComponent />
-    		<Table columns={columns} dataSource={data} pagination={{ pageSize: 16 }} columnsPageRange={[5, 10]} columnsPageSize={3}/>
+    		<Table columns={columns} dataSource={data} loading={loading} pagination={{ pageSize: 16 }} columnsPageRange={[5, 10]} columnsPageSize={3}/>
     	</div>
     );
   }
@@ -234,7 +236,8 @@ class TableComponent extends Component {
 function mapStateToProps(state){
 	return {
 		data : state.table.data,
-		operation : state.table.operation
+		operation : state.table.operation,
+		loading : state.table.loading,
 	};
 }
 

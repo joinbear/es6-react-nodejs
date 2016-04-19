@@ -42,12 +42,23 @@ const initialState = {
 	foldArea:[],
 	foldShop:[],
 	foldGroup:[],
-	columns : []
+	columns : [],
+	SearchBtn:''
 };
 
 
 export default function list(state=initialState,action){
 	switch(action.type){
+		case constants.of('DATA_LOADING'):
+			return Object.assign({},state,{
+				SearchBtn : action.SearchBtn 
+			});
+			break;
+		case constants.of('RECEIVED_QUICKSELL_LISTDATA'):
+			return Object.assign({},state,{
+				SearchBtn : action.SearchBtn 
+			});
+			break;
 		default :
 			return state;
 	}
