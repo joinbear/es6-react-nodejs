@@ -65,6 +65,19 @@ function receivedQuickSellList(listData) {
   }
 }
 
-export function fetchOperation(contractId,type){
-  console.log(contractId);
+export function requestOperation(type,id){
+  const data = { "id" : id };
+  console.log('---------------');
+  return (dispatch) => {
+    fetchUrl(dispatch,{ url : '/ekp/quick-sell/operate/' + type , body : data ,method : 'PUT',callback : receivedQuickSellList });
+  }
+}
+
+function receivedOperateResult(result){
+  const { data } = result;
+  return {
+    type : constants.RECEIVED_QUICKSELL_HANDLE,
+    data : data , 
+    loading : false
+  }
 }

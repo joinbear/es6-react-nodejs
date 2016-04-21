@@ -12,5 +12,10 @@ export default {
 	port: 27017,//端口号
 	debug : true,
 	devhost: 'http://127.0.0.1:3000',
-	api : 'http://10.63.0.69:8888/QuickSellAPI/v1/'
+	api : 'http://10.63.0.69:8888/QuickSellAPI/v1/',
+	redis : {
+		ip : '127.0.0.1',
+		host : '6379',
+		options : {}
+	}
 };
