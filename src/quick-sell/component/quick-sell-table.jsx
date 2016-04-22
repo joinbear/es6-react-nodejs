@@ -2,9 +2,9 @@ import React , { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
-import { handleOperation } from '../actions/logic-action';
-import { requestOperation } from '../actions/fetch-action';
-import { formatDate } from '../../common-reducer/function';
+import { handleOperation , handleLoading} from '../actions/logic-action';
+import { requestOperation , requestQuickSellList } from '../actions/fetch-action';
+import { formatDate } from '../../common/reducer/function';
 import { Table, Icon , Popconfirm , Spin , Popover , Modal, Button} from 'antd';
 import OperationComponent from './quick-sell-operation';
 /**
@@ -16,44 +16,54 @@ class TableComponent extends Component {
     this.displayName = 'TableComponent';
 		this.renderAction    = this.renderAction.bind(this);
 		this.renderOperation = this.renderOperation.bind(this);
-		this.handleStatus    = this.handleStatus.bind(this);
   }
-  handleStatus(type,contractNo){
-  	const { handleOperation } = this.props;
-  	handleOperation(type,contractNo);
+  pagenation(noop) {
+  	const { cacheConditions , requestQuickSellList , handleLoading } = this.props;
+  	handleLoading();
+  	requestQuickSellList({data : cacheConditions,page:noop});
   }
+  /**
+   * [renderOperation 操作渲染事件，包含权限等处理]
+   * @param  {[type]} text   [对应行文本]
+   * @param  {[type]} record [对应行对象]
+   * @return {[type]}        [description]
+   */
 	renderOperation(text, record){
 		const { requestOperation , handleOperation} = this.props;
-		const deleteTitle = '是否删除合同号为' + record.contractNo + '的速销数据';
-		const releaseTitle = '是否解约合同号为' + record.contractNo + '的速销数据';
+		const fdId = record.id;
+		const passData = { id : fdId}
+		const deleteTitle = '是否删除合同号为' + fdId + '的速销数据';
+		const releaseTitle = '是否解约合同号为' + fdId + '的速销数据';
 		return (
       <span>
-        <a href="javascript:;" onClick={()=>handleOperation('compensate',record.contractNo)}>报赔</a>
+        <a href="javascript:;" onClick={()=>handleOperation('compensate',fdId)}>报赔</a>
         <span className="ant-divider"></span>
-        <a href="javascript:;" onClick={()=>handleOperation('resigner',record.contractNo)}>续签</a>
+        <a href="javascript:;" onClick={()=>handleOperation('renew',fdId)}>续签</a>
         <span className="ant-divider"></span>
-        <a href="javascript:;" onClick={()=>handleOperation('recycle',record.contractNo)}>回收</a>
+        <a href="javascript:;" onClick={()=>handleOperation('regain',fdId)}>回收</a>
         <span className="ant-divider"></span>
         <Popconfirm 
         	placement="leftBottom" 
         	title={releaseTitle} 
         	okText="解约" 
-        	onConfirm={()=>requestOperation('audit',record.id)}>
-        	<a href="#">解约</a>
+        	onConfirm={()=>requestOperation({type:'cancel',data : passData})}>
+        	<a href="javascript:;">解约</a>
         </Popconfirm>
         <span className="ant-divider"></span>
         <Popconfirm 
         	placement="leftBottom" 
         	title={deleteTitle} 
         	okText="删除" 
-        	onConfirm={()=>requestOperation('audit',record.id)}>
+        	onConfirm={()=>requestOperation({type:'cancel',data : passData,method:'DELETE'})}>
         	<a href="#">删除</a>
         </Popconfirm>
       </span>
     );
 	}
   renderAction(text, record){
-  	const { requestOperation } = this.props;
+  	const { requestOperation , handleOperation } = this.props;
+  	const fdId = record.id;
+  	const passData = {id : fdId};
   	switch(text){
   		case '已审核':
   		case '不付款':
@@ -78,7 +88,7 @@ class TableComponent extends Component {
 					<Popconfirm 
 						title={title} 
 						okText="审核"
-						onConfirm={()=>requestOperation('audit',record.id)}>
+						onConfirm={()=>requestOperation({type:'audit',data:passData})}>
 						<a href="javascript:;">未审核</a>
 					</Popconfirm>
 				);
@@ -109,16 +119,17 @@ class TableComponent extends Component {
       		</Popover>
       	);
 			case '合格':
-				return (<a href="javascript:;" onClick={()=>this.handleStatus('visitStatus',record.contractNo)}>合格</a>);
+				return (<a href="javascript:;" onClick={()=>handleOperation('revisit',fdId)}>合格</a>);
 			case '不合格':
-				return (<a href="javascript:;" onClick={()=>this.handleStatus('visitStatus',record.contractNo)}>不合格</a>);
+				return (<a href="javascript:;" onClick={()=>handleOperation('revisit',fdId)}>不合格</a>);
   		default :
   			return (<span>{text}</span>);
   	}
   }
   render() {
-  	const { data , operation , loading } = this.props;
+  	const { data , operation , loading , total} = this.props;
   	const renderContent = operation ? this.renderAction : '';
+  	// 数据渲染对应参数
   	const columns = [{
     		title: '序号',
 			  key: '1',
@@ -221,7 +232,7 @@ class TableComponent extends Component {
     return (
     	<div>
     		<OperationComponent />
-    		<Table columns={columns} dataSource={data} loading={loading} pagination={{ pageSize: 15 }} columnsPageRange={[5, 10]} columnsPageSize={3}/>
+    		<Table columns={columns} dataSource={data} loading={loading} pagination={{ pageSize: 15 , total : total , showQuickJumper : true , onChange : (noop)=>this.pagenation(noop)}} columnsPageRange={[5, 10]} columnsPageSize={3}/>
     	</div>
     );
   }
@@ -232,13 +243,17 @@ function mapStateToProps(state){
 		data : state.table.data,
 		operation : state.table.operation,
 		loading : state.table.loading,
+		total : state.table.total,
+		cacheConditions : state.table.cacheConditions
 	};
 }
 
 function mapDispatchToProps(dispatch){
 	return bindActionCreators({
 		handleOperation,
-		requestOperation
+		requestOperation,
+		handleLoading,
+		requestQuickSellList
 	},dispatch);
 }
 

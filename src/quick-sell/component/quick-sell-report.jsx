@@ -1,7 +1,7 @@
 import React , { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { requestRegin , requestSubRegin , requestStore} from '../../common-reducer/action';
+import { requestRegin , requestSubRegin , requestStore} from '../../common/reducer/action';
 import { requestQuickSellInitData } from '../actions/fetch-action';
 import { handleQuickSellType , handleQuickSellChooseType } from '../actions/logic-action';
 import { Select, Radio, Breadcrumb , Row , Col , Input ,Checkbox, Button, DatePicker, InputNumber, Form, Cascader } from 'antd';

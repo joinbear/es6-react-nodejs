@@ -4,10 +4,10 @@ import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
 import { Select, Breadcrumb , Row , Col , Input , Button, DatePicker, Form } from 'antd';
 //组织架构action引入
-import { requestRegin , requestSubRegin , requestStore } from '../../common-reducer/action';
+import { requestRegin , requestSubRegin , requestStore } from '../../common/reducer/action';
 //交互action引入
-import { requestQuickSellInitData , requestQuickSellList } from '../actions/fetch-action';
-import { handleLoading } from '../actions/logic-action';
+import { requestQuickSellList } from '../actions/fetch-action';
+import { handleLoading , cacheConditions } from '../actions/logic-action';
 
 const Option = Select.Option;
 const createForm = Form.create;
@@ -40,7 +40,7 @@ class SearchForm extends Component {
   }
   //查询事件
   handleSubmit(e) {
-  	const { requestQuickSellList , handleLoading} = this.props;
+  	const { requestQuickSellList , handleLoading , cacheConditions} = this.props;
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((errors, values) => {
       if (!!errors) {
@@ -49,7 +49,10 @@ class SearchForm extends Component {
       }
       console.log('Submit!!!');
       handleLoading();
-      requestQuickSellList(values);
+      //缓存搜索条件
+      cacheConditions(values);
+      //请求数据
+      requestQuickSellList({data : values , page: 1});
       // console.log(values);
     });
   }
@@ -287,7 +290,8 @@ function mapDispatchToProps(dispatch){
 		requestSubRegin,
 		requestStore,
 		requestRegin,
-		handleLoading
+		handleLoading,
+		cacheConditions
 	},dispatch);
 }
 

@@ -25,17 +25,15 @@ const comLib = new _commonLib2.default();
  */
 class QuickSellPageList {
 
-	contructor() {
-		this.host = _config2.default.api;
-	}
+	contructor() {}
 	/**
   * [getList 获取列表页面]
   * @param  {[type]} conditions [条件]
   * @conditions demo "{"beginDate" : "2016-01-04" }" 
   * @return {[type]}            [返回一个promise对象]
   */
-	getList(conditions) {
-		return comLib.getData(_config2.default.pagelist + '?page=1&rows=150&data=' + conditions);
+	getList(conditions, page) {
+		return comLib.getData(_config2.default.pagelist + '?page=' + page + '&rows=15&data=' + conditions);
 	}
 	/**
   * [putList update各种数据]
@@ -44,14 +42,8 @@ class QuickSellPageList {
   * @return {[type]}            [返回一个promise对象]
   */
 	putList(type, conditions) {
-		switch (type) {
-			case 'audit':
-				return comLib.getData(_config2.default.audit + '?data=' + conditions);
-				break;
-			default:
-				return {};
-				break;
-		}
+		console.log(_config2.default[type]);
+		return comLib.postData(_config2.default[type], conditions);
 	}
 	/**
   * [postList 提交数据(回访状态，报赔，续签，回收)]
@@ -60,13 +52,7 @@ class QuickSellPageList {
   * @return {[type]}            [返回一个promise对象]
   */
 	postList(type, conditions) {
-		switch (type) {
-			case 'check':
-				break;
-			default:
-				return {};
-				break;
-		}
+		return comLib.postData(_config2.default[type], conditions);
 	}
 	/**
   * [deleteList 删除速销合同]
@@ -75,7 +61,7 @@ class QuickSellPageList {
   * @return {[type]}            [description]
   */
 	deleteList(conditions) {
-		return comLib.getData(_config2.default.delete + '?data=' + conditions);
+		return comLib.postData(_config2.default['delete'], conditions);
 	}
 
 }

@@ -6,7 +6,8 @@ const initialState = {
 		visible : false,
     fdId : '',
     title : '标题',
-    okText : '确定'
+    okText : '确定',
+    type : ''
 	}
 };
 

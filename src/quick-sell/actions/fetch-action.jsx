@@ -1,4 +1,4 @@
-import { fetchUrl } from '../../common-reducer/function';
+import { fetchUrl } from '../../common/reducer/function';
 import Constant from 'react-constant';
 const constants = Constant('quickSell');
 //============fetch data and pass the data to the reducer=======
@@ -55,21 +55,22 @@ export function requestQuickSellList(conditions) {
  */
 function receivedQuickSellList(listData) {
   console.log(listData);
-  const { data , operation } = listData;
+  const { data , operation , total } = listData;
   return {
     type : constants.RECEIVED_QUICKSELL_LISTDATA,
     data : data , 
     operation : operation ,
+    total : total,
     loading : false,
     SearchBtn : ''
   }
 }
 
-export function requestOperation(type,id){
-  const data = { "id" : id };
+export function requestOperation({type = '' , data = {} , method='PUT' }){
   console.log('---------------');
+  console.log(type);
   return (dispatch) => {
-    fetchUrl(dispatch,{ url : '/ekp/quick-sell/operate/' + type , body : data ,method : 'PUT',callback : receivedQuickSellList });
+    fetchUrl(dispatch,{ url : '/ekp/quick-sell/operate/' + type , body : data ,method : method,callback : receivedQuickSellList });
   }
 }
 

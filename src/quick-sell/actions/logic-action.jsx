@@ -2,6 +2,18 @@ import Constant from 'react-constant';
 const constants = Constant('quickSell');
 
 /**
+ * [cacheConditions 缓存搜索条件用于分页]
+ * @param  {[type]} conditions [搜索条件]
+ * @return {[type]}            [description]
+ */
+export function cacheConditions(conditions){
+  return {
+    type: constants.CACHE_DATA,
+    cacheConditions : conditions
+  }
+}
+
+/**
  * [handleLoading 处理load的逻辑以及按钮的可用与否]
  * @return {[type]} [description]
  */
@@ -79,44 +91,53 @@ export function handleFormAction(validate,name){
   }
 }
 
-
-export function handleOperation(handleType,fdId){
+/**
+ * [handleOperation 处理操作弹窗逻辑]
+ * @param  {[type]} handleType [弹窗类型]
+ * @param  {[type]} id         [战报id]
+ * @return {[type]}            [description]
+ */
+export function handleOperation(handleType,id){
   var data={};
   switch(handleType){
     case 'compensate':
       data = {
         compensate : true,
-        fdId : fdId,
+        id : id,
         title : '速销报赔',
         okText : '报赔',
-        visible : true
+        visible : true,
+        type : 'compensate'
       }
       break;
-    case 'visitStatus':
+    case 'revisit':
       data = {
-        visitStatus : true,
-        fdId : fdId,
+        revisit : true,
+        id : id,
         title : '回访信息',
         okText : '修改',
-        visible : true
+        visible : true,
+        type : 'revisit'
       };
       break;
-    case 'resigner':
+    case 'renew':
       data = {
-        resigner : true,
-        fdId : fdId,
+        renew : true,
+        id : id,
         title : '速销续签',
         okText : '续签',
-        visible : true
+        visible : true,
+        type : 'renew'
       }
       break;
-    case 'recycle':
+    case 'regain':
       data = {
-        recycle : true,
-        fdId : fdId,
+        regain : true,
+        id : id,
         title : '速销回收',
         okText : '回收',
-        visible : true
+        visible : true,
+        type : 'regain'
       };
       break;
     default :

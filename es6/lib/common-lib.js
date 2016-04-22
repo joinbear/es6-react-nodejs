@@ -34,6 +34,20 @@ class CommonLibrary {
 			});
 		});
 	}
+	postData(url,data) {
+		console.log('--------'+ url);
+		return this.promise(function(resolve,reject){
+			superagent
+			.post(url)
+			.send(data)
+			.end(function(err,result) {
+				if (err) {
+			    reject(err);
+			  }
+			  resolve(result);
+			});
+		});
+	}
 	/**
 	 * [buildConfig 构建本地测试应用的url地址]
 	 * @param  {[type]} object [description]

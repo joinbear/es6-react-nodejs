@@ -1,6 +1,6 @@
 import React , { Component }from 'react';
 import { connect } from 'react-redux';
-import BreadCrumb from './bread-crumb';
+import BreadCrumb from '../../common/component/bread-crumb';
 import Report from './quick-sell-report';
 
 class AddReport extends React.Component {

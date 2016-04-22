@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import BreadCrumb from './bread-crumb';
+import BreadCrumb from '../../common/component/bread-crumb';
 import SearchForm from './quick-sell-search';
 import TableComponent from './quick-sell-table';
 import './App.less';

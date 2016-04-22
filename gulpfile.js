@@ -5,7 +5,7 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
  
 gulp.task('es6-build', () => {
-  return gulp.src('es6/**/*.js')
+  return gulp.src('./es6/**/*.js')
     .pipe(babel({
       plugins: [
         "transform-strict-mode",

@@ -4,7 +4,9 @@ const constants = Constant('quickSell');
 const initialState = {
 	data : [],
 	loading : false,
-	operation : false
+	operation : false,
+	total : 0,
+	cacheConditions : {}
 }
 
 export default function table(state=initialState,action){
@@ -13,12 +15,18 @@ export default function table(state=initialState,action){
 			return Object.assign({},state,{
 				data : action.data , 
 				operation : action.operation,
+				total : action.total ,
 				loading : action.loading 
 			});
 			break;
 		case constants.of('DATA_LOADING'):
 			return Object.assign({},state,{
 				loading : action.loading 
+			});
+			break;
+		case constants.of('CACHE_DATA'):
+			return Object.assign({},state,{
+				cacheConditions : action.cacheConditions 
 			});
 			break;
 		default :
