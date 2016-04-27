@@ -24,7 +24,10 @@ router.get('/',(req, res)=>{
  //  })
 	res.sendFile(filename);
 });
-
+router.get('/dept-tree',(req, res)=>{
+	console.log('i am in quick-sell'+req.url);
+	res.sendFile(filename);
+});
 router.get('/add',(req, res)=>{
 	console.log('i am in quick-sell'+req.url);
 	res.sendFile(filename);

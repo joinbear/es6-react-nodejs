@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+// import callAPIMiddleware from '../../common/reducer/fetch-middleware';
 import rootReducer from '../reducers';
 
 const finalCreateStore = compose(

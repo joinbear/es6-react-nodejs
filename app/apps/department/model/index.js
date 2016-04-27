@@ -59,6 +59,21 @@ class Department {
 	getUser(keyword) {
 		return comLib.getData(_config2.default.user + keyword);
 	}
+	/**
+  * [getTree 获取组织树]
+  * @return {[type]} [description]
+  */
+	getTree() {
+		return comLib.getData(_config2.default.tree);
+	}
+	/**
+  * [getPost 根据关键词获取岗位]
+  * @param  {[type]} keyword [岗位关键词]
+  * @return {[type]}         [description]
+  */
+	getPost(keyword) {
+		return comLib.getData(_config2.default.post + keyword);
+	}
 }
 
 exports.default = Department;

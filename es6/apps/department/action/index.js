@@ -191,5 +191,223 @@ router.get('/store/:subreginid',(req, res)=>{
 	
 });
 
+//获取人员信息
+router.get('/person/:keyword',(req, res)=>{
+	// department
+	// .getUser(req.params.keyword)
+	// .then(function(value){
+	// 	res.end(value.text);
+	// },function(err){
+
+	// })
+	res.json({
+		person : [{
+      key: '11',
+      title: '乔尼·周敏',
+      chosen: false
+    },{
+      key: '12',
+      title: '乔尼·周敏',
+      chosen: false
+    },{
+      key: '13',
+      title: '乔尼·周敏',
+      chosen: false
+    },{
+      key: '14',
+      title: '乔尼·周敏',
+      chosen: false
+    },{
+      key: '15',
+      title: '乔尼·周敏',
+      chosen: false
+    },{
+      key: '16',
+      title: '乔尼·周敏',
+      chosen: false
+    },{
+      key: '17',
+      title: '乔尼·周敏',
+      chosen: false
+    }]
+	});
+
+});
+
+//获取岗位
+router.get('/dept/:keyword',(req, res)=>{
+	// department
+	// .getPost(req.params.keyword)
+	// .then(function(value){
+	// 	res.end(value.text);
+	// },function(err){
+
+	// })
+	res.json({
+		dept : [{
+      key: '11',
+      title: '信息中心',
+      chosen: false
+    },{
+      key: '12',
+      title: '财务中心',
+      chosen: false
+    },{
+      key: '13',
+      title: '客服服务中心',
+      chosen: false
+    },{
+      key: '14',
+      title: '人力资源中心',
+      chosen: false
+    },{
+      key: '15',
+      title: '链家网',
+      chosen: false
+    },{
+      key: '16',
+      title: '网站运营部',
+      chosen: false
+    },{
+      key: '17',
+      title: '网店管理部门',
+      chosen: false
+    }]
+	});
+});
+
+//获取岗位
+router.get('/post/:keyword',(req, res)=>{
+	// department
+	// .getPost(req.params.keyword)
+	// .then(function(value){
+	// 	res.end(value.text);
+	// },function(err){
+
+	// })
+	res.json({
+		post : [{
+      key: '11',
+      title: '业务专员一',
+      chosen: false
+    },{
+      key: '12',
+      title: '业务专员二',
+      chosen: false
+    },{
+      key: '13',
+      title: '业务专员三',
+      chosen: false
+    },{
+      key: '14',
+      title: '业务专员四',
+      chosen: false
+    },{
+      key: '15',
+      title: '业务专员五',
+      chosen: false
+    },{
+      key: '16',
+      title: '业务专员六',
+      chosen: false
+    },{
+      key: '17',
+      title: '业务专员七',
+      chosen: false
+    }]
+	});
+});
+
+//获取组织树
+router.get('/tree',(req, res)=>{
+	// department
+	// .getTree()
+	// .then(function(value){
+	// 	res.end(value.text);
+	// },function(err){
+
+	// })
+	console.log(req.url);
+	res.json({
+		tree : [{
+    	name : '链家',
+    	key : '93F9C90C9A4F415BB582652A00749AF3',
+    	expand : true,
+    	isLeaf : false,
+    	children : [{
+    		name : '成都链家',
+      	key : '20D74297EB234243B03BD6916CD14E91',
+      	expand : true,
+      	isLeaf : false,
+      	children : [{
+      		name : '财务中心',
+	      	key : '0013AAAAAAAAAAAAAAAAAAAAAA0013AA',
+	      	expand : true,
+	      	isLeaf : false,
+	      	children : [{
+	      		name : '乔尼·周敏',
+		      	key : '20110553',
+		      	expand : true,
+		      	isLeaf : true,
+		      	children : []
+	      	},{
+	      		name : '乔尼·周敏',
+		      	key : '20110554',
+		      	expand : true,
+		      	isLeaf : true,
+		      	children : []
+	      	},{
+	      		name : '乔尼·周敏',
+		      	key : '20110555',
+		      	expand : true,
+		      	isLeaf : true,
+		      	children : []
+	      	}]
+      	},{
+      		name : '店面支持中心',
+	      	key : '090608184552F425B2F7924D1607C6F1',
+	      	expand : true,
+	      	isLeaf : false,
+	      	children : []
+      	},{
+      		name : '金融事业部',
+	      	key : 'E190014',
+	      	expand : true,
+	      	isLeaf : false,
+	      	children : []
+      	},{
+      		name : '客户服务中心',
+	      	key : '009AAAAAAAAAAAAAAAAAAAAAAA009AAA',
+	      	expand : true,
+	      	isLeaf : false,
+	      	children : []
+      	},{
+      		name : '链家网成都站',
+	      	key : 'E190015',
+	      	expand : true,
+	      	isLeaf : false,
+	      	children : []
+      	},{
+      		name : '培训中心',
+	      	key : '0065AAAAAAAAAAAAAAAAAAAAAA0065AA',
+	      	expand : true,
+	      	isLeaf : false,
+	      	children : []
+      	}]
+    	},{
+    		name : '重庆链家',
+      	key : 'B09002BD75384068BEB4085872B5A83B',
+      	expand : true,
+      	isLeaf : false,
+      	children : []
+    	}]
+    }]
+	});
+
+
+});
+
+
+
 const DeptRouter = router;
 export default DeptRouter;

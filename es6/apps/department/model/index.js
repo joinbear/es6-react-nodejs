@@ -43,6 +43,21 @@ class Department {
 	getUser(keyword) {
 		return comLib.getData(config.user + keyword);
 	}
+	/**
+	 * [getTree 获取组织树]
+	 * @return {[type]} [description]
+	 */
+	getTree() {
+		return comLib.getData(config.tree);
+	}
+	/**
+	 * [getPost 根据关键词获取岗位]
+	 * @param  {[type]} keyword [岗位关键词]
+	 * @return {[type]}         [description]
+	 */
+	getPost(keyword) {
+		return comLib.getData(config.post + keyword);
+	}
 }
 
 
