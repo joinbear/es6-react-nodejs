@@ -167,7 +167,7 @@ class Report extends Component {
 		          {...formItemLayout}
 		          label="调入人：">
 		          <Select
-		          	{...this.handleField('foldUserName',)}
+		          	{...this.handleField('foldUserName')}
 		          	combobox
 		          	onSearch={(value)=>this.handlePerson(value)} 
 		          	searchPlaceholder="输入并选择调入人">

@@ -276,7 +276,7 @@ class OperationComponent extends Component {
                 {...formItemLayout}
                 label="续签调入人：">
                   <Select
-                    {...this.handleField('renewFoldUserName',)}
+                    {...this.handleField('renewFoldUserName')}
                     combobox
                     onSearch={(value)=>this.handlePerson(value)} 
                     searchPlaceholder="输入并选择续签调入人">
